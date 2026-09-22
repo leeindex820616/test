@@ -1,0 +1,789 @@
+<html lang="zh-Hant" data-theme="dark" style="color-scheme: dark;"><head><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"cred":"cookie","capabilities":{"artifact":"artifact.Kiow93e4.js","assets":"assets.DOAjpBS9.js","comments":"comments.DrhK3r8W.js","db":"db.zFlAA4qL.js","downloads":"downloads.axDW2QAi.js","embed":"embed.DcZf-TSv.js","endpoints":"endpoints.BPfoKaE1.js","mcp":"mcp.C8qKIFvQ.js","network":"network.B5UA9Su4.js","permissions":"permissions.DWFFeHI0.js","room":"room.BF1j0KPr.js","sample":"sample.C7KQQdQj.js","self":"artifact.Kiow93e4.js","user":"user.CCh6oTS_.js"},"transforms":"_transforms.CkRgqq9F.js","comments":"_comments.DUaNQZcg.js","translate":"_translate.DqxC5ek1.js","ldx":"_ldx.CqNtBrkk.js"}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </script><script>(function(){"use strict";function sr(t){return t==="cookie"||t==="query"?t:void 0}var Kn=3e5;function ir(t,e){try{const r=t("navigation")[0],n=[r.responseStart,r.redirectEnd-r.redirectStart,r.domContentLoadedEventStart,e(),r.connectEnd-r.domainLookupStart,r.responseStart-r.requestStart];r.requestStart>0||(n.length=4);for(let a=0;a<n.length;a++)if(n[a]>=0&&n[a]<=3e5)n[a]=n[a]|0;else{if(a<4)return;n.length=4}return n}catch{return}}var lr=["light","dark","system"],cr=/^[A-Za-z0-9_-]{1,64}$/,St=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,ur=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function fr(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||ur.has(e)}var At="data-ldx-props";function dr(t,e){if(e.toLowerCase()===At)return!0;const r=t.getAttribute(At);if(r===null)return!1;try{const n=JSON.parse(r);if(n===null||typeof n!="object"||Array.isArray(n))return!0;const a=e.toLowerCase();return Object.keys(n).some(s=>s.toLowerCase()===a)}catch{return!0}}var Gn="http://www.w3.org/1999/xhtml",hr="http://www.w3.org/2000/svg",pr=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),mr=new Set(["script","style"]);function vr(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!pr.has(e):t.namespaceURI===hr?!mr.has(e):!1}function Ve(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function _r(t,e){const r=t.length,n=e.length;let a=0;for(;a<r&&a<n&&Ve(t.charCodeAt(a),e.charCodeAt(a));)a++;let s=0;for(;s<r-a&&s<n-a&&Ve(t.charCodeAt(r-1-s),e.charCodeAt(n-1-s));)s++;return{p:a,s}}function yr(t,e){const r=t.firstChild;if(t.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const n=r.data,a=n.length,s=e.length,{p:c,s:d}=_r(n,e);c===a&&d===0&&a===s||r.replaceData(c,a-c-d,e.slice(c,s-d));const O=r.data,w=t.ownerDocument.getSelection?.()??null,b=w!==null&&w.rangeCount>0&&(w.anchorNode===r||w.focusNode===r)?{anchor:w.anchorNode,anchorOffset:w.anchorOffset,focus:w.focusNode,focusOffset:w.focusOffset}:null;let m=-1,R=-1;for(let h=0;h<O.length&&h<e.length;h++){const p=O.charCodeAt(h),D=e.charCodeAt(h);p!==D&&Ve(p,D)&&(m<0&&(m=h),R=h)}const M=m>=0;if(M&&r.replaceData(m,R-m+1,e.slice(m,R+1)),M&&b!==null&&b.anchor!==null&&b.focus!==null)try{w.setBaseAndExtent(b.anchor,b.anchorOffset,b.focus,b.focusOffset)}catch{}}var gr=new Set(["html","head","body","frameset"]);function wr(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&gr.has(t.localName)}function br(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!cr.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[r,n]of Object.entries(e.attrsSet))if(!St.test(r)||typeof n!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const r of e.attrsRemoved)if(typeof r!="string"||!St.test(r))return!1}return!0}function Er(t,e){if(t===null||typeof t!="object")return!1;const{seq:r,elements:n}=t;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!e(n[a]))return!1;return!0}function Sr(t){return t===null||typeof t!="object"?!1:Er(t.__frame_patch,br)}function Ar(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function kr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function Rr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function Tr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const r=e.theme;return typeof r=="string"&&lr.includes(r)}var Lr=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],Or=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function Mr(t){return typeof t=="string"&&Or.includes(t)?t:"other"}var Pr=Object.freeze({until:null,now:!1}),Nr="__claude_hot",Cr="__claude_hot_in",jr=/^__claude_hot(?:_in)?(?::|$)/,kt=/^[0-9a-z]{1,32}$/,Xe=t=>t===void 0?Nr:"__claude_hot:"+t,be=t=>t===void 0?Cr:"__claude_hot_in:"+t;function Fr(t,e){const r=[];for(let n=0;n<t.length;n++){const a=t.key(n);a!==null&&a!==e&&jr.test(a)&&r.push(a)}for(const n of r)t.removeItem(n)}function Ir(t){let e=null;try{e=q(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!kt.test(e.k)?null:le(e.g)?{k:e.k,g:e.g}:{k:e.k}}var zn=262144,Dr=3e3,xr=5e3,Rt=/^[a-z0-9._:-]{1,64}$/,Hr=["none","hot-restart","hard-reload"],qr=["asset","doc","added","removed"],Br=1500,Ur=/^[0-9a-f]{64}$/;function q(t){return t!==null&&typeof t=="object"?t:null}function le(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function Tt(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function Kr(t){return t===void 0||typeof t=="string"&&Rt.test(t)}function Lt(t){const e=q(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function Ye(t){const e=q(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Tt(e.seq)&&typeof e.handoff=="string"&&Lr.includes(e.handoff)&&Kr(e.note)}function Gr(t){const e=q(t);return e!==null&&le(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||Ye(e.from))}function zr(t){const e=q(t);return e!==null&&e.kv===1&&le(e.gen)&&Ye(e.from)&&Object.hasOwn(e,"data")}function $r(t){const e=q(t);return e!==null&&e.__frame_hot_snapshot===!0&&le(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||Lt(e.deadline))&&Tt(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function Wr(t){const e=q(t);return e!==null&&e.__frame_hot_start===!0&&le(e.gen)&&Ye(e.from)}function Vr(t){return typeof t=="string"&&t.length>=1&&t.length<=128}function Ot(t){return q(t)!==null&&!Array.isArray(t)}function Xr(t){const e=q(t);return e!==null&&e.__frame_cap_grant===!0&&typeof e.cap=="string"&&Vr(e.ver)&&(e.grant===void 0||Ot(e.grant))&&(e.budgets===void 0||Ot(e.budgets)&&Object.values(e.budgets).every(Number.isFinite))&&(e.brokerGen===void 0||le(e.brokerGen))}function Yr(t){const e=q(t);return e!==null&&e.__frame_cap_rewired===!0&&(e.caps===void 0||Array.isArray(e.caps)&&e.caps.every(r=>typeof r=="string"))&&(e.brokerGen===void 0||le(e.brokerGen))}function Mt(t){const e=q(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function Pt(t){if(t==null||typeof t=="string")return!0;const e=q(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function Jr(t){const e=q(t);return e!==null&&typeof e.path=="string"&&qr.includes(e.kind)&&Pt(e.from)&&Pt(e.to)}function Zr(t){return t===null?null:Object.freeze(t.filter(Jr))}function Qr(t){const e=q(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&Mt(e.from)&&Mt(e.to)&&(e.changed===null||Array.isArray(e.changed))&&Hr.includes(e.required)&&Lt(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Ur.test(e.preflight))}var ce=/^[\w.-]+\.js$/;function en(t,e,r){return r?"inert":typeof e=="string"&&ce.test(e)?t?[e]:"inert":t?"inert":"framed"}var Nt=Object.freeze({[Symbol("claude.hot.restart")]:!0});function Ct(t,e){let r;try{r=t??sessionStorage}catch{return null}const n=Xe(e?.k),a=be(e?.k);let s=null;try{s=r.getItem(n)}catch{}try{r.removeItem(n)}catch{}try{Fr(r,a)}catch{}let c=null;if(s!==null&&!(e!==null&&e.g===void 0))try{const d=JSON.parse(s);zr(d)&&(e===null||d.gen===e.g)&&(c=d)}catch{}if(c===null)try{r.removeItem(a)}catch{}return c}function jt(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var tn=/^[^/\\?#]{1,128}$/,Ft=t=>tn.test(t)&&t!=="."&&t!=="..";function It(t,e,r){const n=new URL(t),a="/_f/"+e+"/";if(!e||!n.pathname.startsWith(a)||!Ft(r))return null;const s=n.search.slice(1).split("&").filter(c=>!/^__frame_t(?:=|$)/.test(c)).join("&");return n.origin+"/_f/"+r+"/"+n.pathname.slice(a.length)+(s?"?"+s:"")+n.hash}var Fe="{}";function Ee(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function Dt(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function xt(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function rn(t,e,r,n=null){const a=setTimeout,s=clearTimeout,c=queueMicrotask,d=performance.now.bind(performance),O=new TextEncoder;let w=null,b=null;try{w=history,b=w.replaceState.bind(w)}catch{}const m=(...o)=>{try{console.warn(...o)}catch{}};let R=jt(),M=null;try{M=sessionStorage}catch{}const h={storage:M,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:R,key:n?.k};let p=n?.k;const D=typeof requestAnimationFrame=="function"?requestAnimationFrame:o=>a(()=>o(d()),16);let _=e?.data??{},C=Ee(e?.from),P=e?.gen??0,x=e!==null,W=!1,J=!1,X=null,Te=!1;const Le=new AbortController;let Oe=null,H=null,me=null,qe=!1,oe=()=>{};const l=new Promise(o=>{oe=o});let v=!1,E=!1,I=!1,j,L=null,K=!1,Me=!1,Z=!1,Be=!1,ae=!1,de=!1;const Pe=o=>{for(const u of[Xe(o),be(o)])try{M?.removeItem(u)}catch{}},V=(o,u)=>{try{u!==null&&r.post(o,u)}catch{}},se=()=>ae||=Z&&(H===null||Be),B=()=>{const o={__frame_hot:!0,ready:H!==null,accept:me!==null,demand:!0};de=!ae,de&&(o.booting=!0),v&&(o.readData=!0),I&&(o.threw=!0),L?.assess&&(o.preflight=!0),V(o,X)};let ve=!1,Ne=!1,ie=!1,Ce=!1;const i=()=>{ve||!Te||ie||(ve=!0,V({__frame_reveal_hold:!0},"*"))},g=()=>new Promise(o=>{let u,f=0;const S=F=>{if(u===void 0)u=F;else if(F!==u||++f>=8){o();return}try{D(S)}catch{o()}};try{D(S)}catch{o()}}),y=()=>{ie=!0,V({__frame_reveal_ready:!0},"*")},k=o=>{Ne||(Ne=!0,o.then(u=>{if(u===!1)return;let f=null;try{f=L?.settle?.()??null}catch{}return(f===null?g():new Promise(S=>{a(S,50),Promise.resolve(f).then(S,S)}).then(g)).then(y)}))},Q=()=>{if(Ce||!ie)return;Ce=!0;const o=()=>{try{L?.afterReveal?.()}catch{}};o(),g().then(()=>{o(),y()})},G=(o=!1)=>{if(qe||H===null||!x||!J)return;qe=!0;const u=H,f=_;c(()=>{let S;try{S=u(f)}catch(U){throw oe(!1),U}let F=!1;try{F=typeof S?.then=="function"}catch{}if(!F){oe(!0);return}Promise.resolve(S).then(()=>oe(!0),U=>{oe(!1),c(()=>{throw U})})}),k(o?l:r.dcl.then(()=>l))},ee=o=>typeof o=="string"&&Rt.test(o)?o:void 0,dt=o=>{const u={__frame_hot_restart:!0},f=ee(o?.note);f!==void 0&&(u.note=f),o?.required==="hard-reload"&&(u.required="hard-reload"),V(u,X)},Zt=Object.freeze({get data(){return J||(E=!0),!x&&!v&&(v=!0,J&&B()),_},get from(){return C},get gen(){return P},signal:Le.signal,snapshot(o){typeof o=="function"&&(Oe=o)},ready(o){typeof o!="function"||H!==null||(H=o,i(),B(),W&&V({__frame_hot_ready:!0,gen:P},X),G())},accept(o){typeof o=="function"&&(me=o,B())},restart(o){const u={note:o?.note,required:o?.required};if(J){dt(u);return}const f=j;j={note:ee(f?.note)??u.note,required:f?.required==="hard-reload"||u.required==="hard-reload"?"hard-reload":void 0}}});let Ue=null,Qt=()=>{};const Fn=new Promise(o=>{Qt=o});let In=null;const er=()=>In??=r.dcl.then(()=>{let o=!1;try{o=Ue!==null&&Ue.expect()}catch{}if(!o)return;const u=Ue.maxMs;return new Promise(f=>{Fn.then(f),a(f,u)})}),tr=()=>{if(!K||Me||L===null)return;Me=!0;const o=L;er().then(()=>{try{ie||o.afterStart(xt(e),!1)}catch{}})},rr=o=>{e!==null&&E&&(v=!0),_={},C=null,P=0;try{M?.removeItem(be(n?.k))}catch{}e!==null&&!o&&k(r.dcl.then(()=>H!==null?l:void 0))},Dn=()=>{K=!0,k(er().then(()=>H!==null?l:void 0)),tr()};try{addEventListener("error",()=>{I||H!==null||(I=!0,B())})}catch{}const nr=()=>{a(()=>{!ae&&se()&&de&&B()},0)};try{Z=document.readyState==="complete",Z||addEventListener("load",()=>{Z=!0,nr()},{once:!0})}catch{Z=!0}se(),l.then(()=>{Be=!0,nr()});let he=-1,ht,pt,je=!0,mt=!1,vt,Ke=null;const _t=o=>{const u=Ke===null;Ke=je&&o[0]!=="withheld"?o:["withheld",o[1],Fe];let f=o[0];if(je&&f!=="withheld"){const F={ver:R,handoff:f};ht!==void 0&&(F.seq=ht),pt!==void 0&&(F.note=pt);try{if(M===null)throw new Error("no storage");M.setItem(Xe(p),'{"kv":1,"gen":'+he+',"from":'+JSON.stringify(F)+(vt!==void 0?',"k":'+JSON.stringify(vt):"")+',"data":'+(f==="ok"?o[2]:Fe)+"}")}catch{f="unavailable"}}else{f="withheld",Pe(p);try{L?.release?.()}catch{}}const S={__frame_hot_snapshotted:!0,gen:he,handoff:f,bytes:o[1]};o[3]!==void 0&&(S.errName=o[3]),V(S,X),u&&(f==="snapshot_error"||f==="unclonable"||f==="oversize")&&m("claude.hot: snapshot",f,o[3])},_e=o=>{try{return Mr(o?.name)}catch{return"other"}},ye=(o,u,f=0)=>_t(u===void 0?[o,f,Fe]:[o,f,Fe,_e(u)]),xn=o=>{if(o.gen<=he)return;const u=he>=0;if(he=o.gen,ht=o.seq,pt=ee(o.note),typeof o.key=="string"&&kt.test(o.key)&&o.key!==p&&(Pe(p),p=o.key),je&&=o.handoff!==!1,u){Ke!==null?_t(Ke):mt&&V({__frame_hot_held:!0,gen:he},X);return}Le.abort();const f=Object.freeze({handoff:je,timeoutMs:o.timeoutMs,deadline:o.deadline??Pr}),S=Oe,F=()=>{if(je)try{vt=L?.capture()}catch{}if(S===null){ye("empty");return}let T=!1;const z=a(()=>{T||(T=!0,ye("snapshot_timeout"))},Math.max(0,f.timeoutMs));Promise.resolve().then(()=>S(f)).then(ge=>{if(T)return;T=!0,s(z);let re;try{re=JSON.stringify(ge)}catch(yt){ye("unclonable",yt);return}if(typeof re!="string"){ye("unclonable");return}let ne=re.length;try{ne=O.encode(re).length}catch{}if(ne>262144){ye("oversize",void 0,ne);return}_t(["ok",ne,re])},ge=>{T||(T=!0,s(z),ye("snapshot_error",ge))})};let U=null;try{U=L?.holdForIme()??null}catch{}if(U===null)F();else{mt=!0,V({__frame_hot_held:!0,gen:he},X);const T=()=>{mt=!1,F()};U.then(T,T)}},Hn=o=>{if(!W||x||H===null||o.gen!==P)return;let u=null;try{u=Ct(M,n&&{k:n.k,g:o.gen})}catch{}if(u!==null&&u.gen!==o.gen){u=null;try{M?.removeItem(be(n?.k))}catch{}}_=u?.data??{},C=Dt(Ee(u?.from??o.from),Ee(o.from)),u!==null&&(P=u.gen),x=!0,W=!1;const f=xt(u);l.then(S=>{try{S&&L?.afterStart(f,!0)}catch{}}),G(!0)};let Ge=0;const qn=o=>{const u=me;if(u===null||o.id<=Ge)return;Ge=o.id;const f=L?.assess;if(o.preflight===void 0||f===void 0){or(o,u);return}let S=!1;const F=z=>{S||(S=!0,s(T),o.id===Ge&&or(o,u,z))},U=()=>F(f.timeout(o)),T=a(U,Br+100);f.run(o,window).then(F,U)},or=(o,u,f)=>{let S,F=!1,U=!1,T,z,ge=null;const re=A=>{if(U)return!1;if(T!==void 0&&T!==A)return m(`claude.hot: u.${A}() ignored - u.${T}() was called first`),!1;const te=T===void 0;return T=A,te},ne=A=>{T="restart",m(`claude.hot: ${A} - restarting`)},yt=()=>{if(!re("adopt")||o.id!==Ge)return;const A=o.to.ver;if(ze.required!=="none"){ne(`u.adopt() needs required 'none', it is '${ze.required}'`);return}if(!Ft(A)){ne("u.adopt() cannot address this version");return}if(!R||A===R)return;const te=R,Y=h.entry;let $e="",wt,we=null,We;try{$e=location.href,wt=w.state,we=It($e,te,A),we!==null&&(b(wt,"",we),location.pathname.startsWith("/_f/"+A+"/")?we=location.href:We="navigate event canceled")}catch(Et){We=_e(Et)}if(We!==void 0){z="adopt_failed",ne(`adopt_failed ${We}; URL not changed`);return}we===null?(z="adopt_skipped",m(`claude.hot: adopt_skipped - page already left /_f/${te}/; URL not changed, update still applied`)):z="adopted",R=h.ver=A;try{h.entry=It(Y,te,A)??Y}catch{}const bt=we;ge=()=>{if(R===A){if(bt!==null)try{if(location.href!==bt)m("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(b(wt,"",$e),location.href!==$e){m("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}z="adopt_reverted",m("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(Et){m(`claude.hot: adopt_revert_failed ${_e(Et)} - URL still at the new version`);return}R=h.ver=te,h.entry=Y,bt===null&&(z=void 0)}}},ze=Object.freeze({from:{ver:o.from.ver,seq:o.from.seq},to:{ver:o.to.ver,seq:o.to.seq},changed:Zr(o.changed),required:o.required,deadline:o.deadline,adopt:yt,defer(){return re("defer")&&ze.deadline.now&&ne("u.defer() past the deadline"),Nt},restart(A){return re("restart"),T==="restart"&&!U&&(S??=ee(A?.note),F||=A?.required==="hard-reload"),Nt},...f?.update}),Bn=(A,te)=>{U=!0,A==="threw"?(ge?.(),S??=_e(te).toLowerCase()):T===void 0&&m(A==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const Y={__frame_hot_verdict:!0,id:o.id};Y.verdict=A==="threw"||T===void 0||T==="restart"?"restart":T==="adopt"?"applied":"deferred",Y.verdict==="restart"&&(F&&(Y.required="hard-reload"),S!==void 0&&(Y.note=S)),z!==void 0&&(Y.verdict==="applied"||z!=="adopted")&&(Y.adopt=z),V(Object.assign(Y,f?.verdict),X)};let ar=!1;const gt=(A,te)=>ar?!1:(ar=!0,s(Un),Bn(A,te),!0),Un=a(()=>gt("timeout"),o.verdictTimeoutMs);Promise.resolve().then(()=>u(ze)).then(()=>gt("settled"),A=>{!gt("threw",A)&&T==="adopt"&&dt({note:_e(A).toLowerCase()}),m("claude.hot: accept",_e(A))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:Zt,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:Zt,boot:h,afterConnect(){Te=!0,(e!==null||H!==null)&&i()},onInit(o,u){X=u,J=!0;const f=Gr(o)?o:null;f?.phase==="final"&&e!==null&&e.gen===f.gen?(x=!0,C=Dt(C,Ee(f.from)),Dn()):(W=f?.phase==="pending",rr(W),x=!W,P=f?.gen??0,C=Ee(f?.from)),B(),de&&a(()=>{ae||(ae=!0,B())},xr),W&&H!==null&&V({__frame_hot_ready:!0,gen:P},u),j!==void 0&&(dt(j),j=void 0),G()},onNoInit(){J=!0,rr(!1),x=!0,G()},onShell(o){return o?.__frame_revealed===!0?(Q(),!1):$r(o)?(xn(o),!0):Wr(o)?(Hn(o),!0):Qr(o)?(qn(o),!0):!1},attachExtras(o){L=o,tr(),o.assess&&B()},inSlot:()=>be(p),hydration(o,u){Ue??={expect:o,maxMs:u}},hydrated(){Qt()},carried(){return x?_:{}},presented:()=>ie}}var $n="frame_ldx_runtime",nn="frame_ldx_build",Wn="script#an-form",on=256;function Ht(t,e,r){for(const n of t)r(n)&&t.delete(n);t.size>=on&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function Je(t,e,r){try{const n=t[e];if(typeof n!="function")return;t[e]=function(...a){const s=n.apply(this,a);try{r(this)}catch{}return s}}catch{}}var Ze;function an(){if(Ze)return Ze;const t={media:new Set,contexts:new Set,onStart:null,onPause:null};Ze=t;const e=window.HTMLMediaElement?.prototype;e&&(Je(e,"play",a=>{Ht(t.media,a,s=>s.paused),t.onStart?.(a)}),Je(e,"pause",a=>t.onPause?.(a)));const r=window.AudioContext,n=window.AudioNode?.prototype;return r&&n&&Je(n,"connect",a=>{const s=a.context;s instanceof r&&(Ht(t.contexts,s,c=>c.state==="closed"),t.onStart?.(s))}),t}function sn(t){let e=window;for(let r=0;e.parent&&e.parent!==e&&r<8;r++)if(e=e.parent,t(e))return!0;return!1}function ln(){let t=null;const e=()=>t??parent,r=n=>t?n===t:sn(a=>a===n);return{post(n,a){if(t){e().postMessage(n,a);return}let s=parent;for(let c=0;c<8&&(s.postMessage(n,a),!(!s.parent||s.parent===s));c++)s=s.parent},on(n){const a=s=>{const c=s.source;r(c)&&n(s.data,s.origin,s.isTrusted,()=>{t??=c})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:n=>({post(a,s){if(s?.activation){e().postMessage(a,{targetOrigin:n,includeUserActivation:!0});return}if(s?.transfer){e().postMessage(a,n,s.transfer);return}e().postMessage(a,n)},on(a,s){const c=d=>{r(d.source)&&d.origin===n&&a(d.data,d)};return addEventListener("message",c,s),()=>removeEventListener("message",c,s)}})}}function cn(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var un=500,fn=2e4,dn="data-token-reads",hn="data-frame-refused-watch",pn="data-frame-unsupported",mn=/(?:^|\s)stylesheet(?:\s|$)/i;function vn(t,e){let r="";if(t instanceof HTMLScriptElement?r=t.src:t instanceof HTMLLinkElement&&mn.test(t.rel)&&(r=t.href),!r)return null;try{const n=new URL(r);return n.origin===location.origin&&n.pathname.startsWith(e)?n.origin+n.pathname:null}catch{return null}}function _n(t,e,r){if(!t||e!=="query")return;const n="/_f/"+t+"/";document.documentElement.setAttribute(hn,"");const a=location.href,s=fetch,c=setTimeout,d={method:"HEAD",cache:"no-store",credentials:"same-origin"},O=h=>h.ok||h.status===304;let w=!1,b=!1;const m=()=>removeEventListener("error",M,!0),R=async h=>{const p=await s(h,d);if(O(p))b=!0;else if(p.status===403){const D=await s(a,d);if(O(D)){const _=(await s(h,d)).status;_===403?(b=!0,document.documentElement.setAttribute(pn,""),r()):_<500&&(b=!0)}else D.status>=400&&D.status<500&&(b=!0)}},M=h=>{if(b||w)return;if(document.documentElement.hasAttribute(dn)){b=!0,m();return}const p=vn(h.target,n);p&&(w=!0,c(()=>{R(p).catch(()=>{}).finally(()=>{w=!1,b&&m()})},un))};addEventListener("error",M,!0),addEventListener("load",m,{once:!0}),c(m,fn)}var Qe="__frame_scroll",yn=150,gn=310,wn=160,bn=3e4;function En(){let t=0,e=!1,r=!1,n=!1,a=0,s=null;const c=_=>{try{sessionStorage.setItem(Qe,JSON.stringify({y:_}))}catch{}},d=()=>{if(clearTimeout(t),s===null)return;const _=s;s=null,c(_)},O=()=>{if(e){e=!1;return}r=!0,s=scrollY,clearTimeout(t),t=setTimeout(d,yn)};try{addEventListener("scroll",O,{passive:!0}),addEventListener("pagehide",d)}catch{}const w=()=>{let _;try{_=sessionStorage.getItem(Qe)}catch{return null}if(_===null)return null;let C;try{C=JSON.parse(_)}catch{C=null}const P=C?.y;if(!(typeof P=="number"&&Number.isFinite(P)&&P>=0)){try{sessionStorage.removeItem(Qe)}catch{}return null}return P};let b=!1;const m=_=>{try{const C=scrollY;scrollTo({top:_,left:0,behavior:"instant"}),a=_,n=!0,clearTimeout(t),s=null,c(_);const P=scrollY;P!==C&&(e=!0),P!==_&&!b&&(b=!0,addEventListener("load",()=>{try{if(scrollY===P){const x=w();m(x!==null?x:a)}}catch{}},{once:!0}))}catch{}},R=()=>{try{return!!location.hash}catch{return!0}};let M=!1;const h=()=>{try{if(M||innerWidth>gn||innerHeight>wn)return;M=!0;const _=Date.now(),C=()=>{try{removeEventListener("resize",C)}catch{}if(Date.now()-_>bn||r||R())return;const P=w();m(P!==null?P:a)};addEventListener("resize",C)}catch{}};let p=!1,D=!1;return{restore(){if(p||(p=!0,R()))return;const _=w();_!==null&&(m(_),h())},promoted(){if(D||(D=!0,R()))return;const _=w();_!==null?(m(_),h()):n&&m(a)}}}function Sn(t,e,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:O=>O})??null}catch{}const s=window.Worker,c=s?.prototype,d=Object.freeze({Worker:s,workerOn:c?.addEventListener,workerPost:c?.postMessage,workerTerminate:c?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});r(t).then(O=>O?.bootTopLevel?O.bootTopLevel(d,n):n.settle()).catch(()=>n.settle())}var Vn="modulepreload",Xn=function(t){return"/"+t},Yn={},An=function(e,r,n){let a=Promise.resolve();function s(c){const d=new Event("vite:preloadError",{cancelable:!0});if(d.payload=c,window.dispatchEvent(d),!d.defaultPrevented)throw c}return a.then(c=>{for(const d of c||[])d.status==="rejected"&&s(d.reason);return e().catch(s)})},kn=window===top,qt=Object.getOwnPropertyDescriptor(window,"claude"),Ie=en(kn,window.__FRAME_PREAMBLE?.topLevel,qt?.writable===!1),et=typeof Ie=="object"&&Ie[0],N=et?cn():ln();(function(){const t=Object.defineProperty,e=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const s=r[a];try{t(e,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[s]}catch{}try{t(e,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[s]=="function"&&n++}if(n&&Ie==="framed")try{N.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Bt=1e4,Rn=2e3,tt=2e3,rt=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function Ut(t){for(const e of rt)if(e.endsWith(":*"))try{const r=new URL(t);if(`${r.protocol}//${r.hostname}:*`===e)return!0}catch{}else if(t===e)return!0;return!1}var Se=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Ae=window.__FRAME_PREAMBLE?.transforms,nt=window.__FRAME_PREAMBLE?.comments,ot=window.__FRAME_PREAMBLE?.translate,ke=window.__FRAME_PREAMBLE?.ldx,at=sr(window.__FRAME_PREAMBLE?.cred);function Kt(t){return An(()=>import("/_runtime/"+t),void 0)}var Re=new Set,Gt=setTimeout,Tn=fetch,Ln=AbortController,On=800+800*Math.random(),Mn=3e3,De=null,zt=new Map;function Pn(t,e){let r=zt.get(t);return r||zt.set(t,r=Nn(t,e)),r}function Nn(t,e){if(De?.has(t))return Promise.resolve("csp");if(navigator.onLine===!1)return Promise.resolve("offline");const r=new Ln;let n=!1;return Gt(()=>{n=!0,r.abort()},Mn),Tn("/_runtime/"+t,{signal:r.signal}).then(a=>(r.abort(),a.ok?/javascript/i.test(a.headers.get("content-type")??"")?e instanceof Error&&/:\d+:\d+\)?$/m.test(e.stack??"")?"eval":"served":"mime":"http"),()=>n?"timeout":De?.has(t)?"csp":"net")}function ue(t){if(!De){const e=De=new Set;try{document.addEventListener("securitypolicyviolation",r=>{const n=/\/_runtime\/([^/?#]+)/.exec(r.blockedURI);n&&r.disposition!=="report"&&e.add(n[1])})}catch{}}return Kt(t).catch(()=>new Promise(e=>Gt(e,On)).then(()=>Kt(t+"?r=1")).then(e=>(e!==void 0&&Re.add(t),e)))}function $t(t,e,r){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},brokerGen:t.brokerGen,transforms:new Map,shellOrigin:e,shell:r,mount:ft,hooks:xe,pipe:()=>({wrap:(n,a)=>(...s)=>{try{return a(...s)}catch(c){return Promise.reject(c)}}})}}var pe=null,$=null;function Wt(t,e,r){try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var st=!1,xe={editBefore:null,edit:null};function Cn(t,e,r=!1){const n=[];let a;if(r)try{xe.editBefore?.(t)}catch{}for(const s of t.elements){const c=document.querySelector(`[data-id="${s.target}"]`);if(!c){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(d=>!fr(d)||dr(c,d))){a=s.target;break}if(s.text!==void 0&&(!vr(c)||wr(c))){a=s.target;break}for(const[d,O]of Object.entries(s.attrsSet??{}))if(!Xt(c,d)){try{c.setAttribute(d,O)}catch{}Vt(c,d,O)}for(const d of s.attrsRemoved??[])Xt(c,d)||(c.removeAttribute(d),Vt(c,d,null));typeof s.text=="string"&&yr(c,s.text),n.push(s.target)}if(r)try{xe.edit?.(t.seq,n,a)}catch{}if(a!==void 0){N.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:n}}))}catch{}}function Vt(t,e,r){if(!(t instanceof HTMLInputElement))return;const n=e.toLowerCase();n==="checked"?t.checked=r!==null:n==="value"&&t.type!=="file"&&(t.value=r??"")}function Xt(t,e){const r=e.toLowerCase(),n=t;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function Yt(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,st=!0):st&&(delete e.dataset.theme,e.style.colorScheme="",st=!1)}var fe=new Map,it=null;function lt(){let t;const e={u:new Promise(r=>{t=r}),r:r=>{e.done=!0,t(r)},done:!1,nulled:!1};return e}function He(t,e){t.nulled=!0,t.ver=e,t.r(null)}function ct(t,e){for(const[r,n]of fe)n.done||(e&&n.asked?e(r,n):He(n,t))}var jn=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),ut=!1,ft=(t,e)=>{let r=fe.get(t);if(r?.nulled&&ut)r=lt(),fe.set(t,r);else if(!r||r.done){r?.nulled&&$&&N.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},$);return}const n=typeof e=="function"?Object.setPrototypeOf(e,jn):Object.assign(Object.create(null),e);typeof n.then=="function"&&delete n.then,r.want=void 0,r.r(Object.freeze(n))};function Jt(){const t=qt?.value??{};Wt(window,"claude",t);for(const e of Object.keys(Se)){if(t[e]!==void 0){Wt(t,e,t[e]);continue}fe.set(e,lt())}if(t.use===void 0){const e=r=>{if(typeof r!="string"||!Object.hasOwn(Se,r))return Promise.resolve(null);let n=fe.get(r);return n?(it&&(n.nulled||n.want!==void 0)&&(n=it(r,n)),n.asked=!0,n.u):Promise.resolve(t[r]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(Ie==="framed"){let t;const e=Ae&&ce.test(Ae)?ue(Ae).catch(l=>{t={f:Ae,e:l}}):Promise.resolve(void 0),r=l=>{if(l.type==="auxclick"&&l.button!==1)return;const v=l.target,E=v&&v.closest?v.closest("a[href],area[href]"):null;if(!E)return;const I=E.getAttribute("href");if(!I)return;let j;try{j=new URL(I,document.baseURI)}catch{return}if((j.protocol==="http:"||j.protocol==="https:")&&j.origin!==location.origin){l.preventDefault();const L=(E.getAttribute("target")??"").toLowerCase(),K=l.type==="auxclick"||l.metaKey||l.ctrlKey||l.shiftKey||l.altKey||!["","_self","_top","_parent"].includes(L);N.post({__frame_nav:!0,url:j.href,newTab:K},"*")}};addEventListener("click",r,!0),addEventListener("auxclick",r,!0);const n={},a=l=>{l.isTrusted&&(n.pointer=!0)},s=l=>{l.isTrusted&&(n.click=!0)};addEventListener("pointermove",a,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0});const c={cb:null};addEventListener("keydown",l=>c.cb?.(l),!0);const d={cb:null};addEventListener("keydown",l=>d.cb?.(l));const O=an();e.then(l=>l?.installEscapeForward?.(c,v=>{$&&N.post(v,$)})),e.then(l=>{try{l?.installFocusKeep?.()}catch{}}),e.then(l=>{if(!l?.wireNav)return;const v=N.port("*");l.wireNav(v),removeEventListener("click",r,!0),removeEventListener("auxclick",r,!0),removeEventListener("pointermove",a,!0),removeEventListener("click",s,!0),l.wireEngagement?.(n,v,O)});let w=null;try{w=En()}catch{}const b=document.readyState==="loading"?new Promise(l=>document.addEventListener("DOMContentLoaded",()=>l(),{once:!0})):Promise.resolve();let m=null,R=null;try{R=Ir(window.name),m=Ct(null,R)}catch{}const M=Jt();let h=null;try{h=rn(M,m,{post:(l,v)=>N.post(l,v),dcl:b},R)}catch{}e.then(l=>{try{h&&l?.installHotExtras?.(h)}catch{}});let p=null;const D=()=>Array.isArray(p?.flags)&&p.flags.includes("frame_ldx_runtime")&&!!ke&&ce.test(ke)&&document.querySelector("script#an-form")!==null;try{h?.hydration(D,Dr)}catch{}let _=null,C=0;const P=N.on((l,v,E,I)=>{Ut(v)&&Ar(l)&&(I(),p=l.__frame_init,$=v,P(),clearTimeout(C),_?.())});if(at)for(const l of rt)try{l.endsWith(":*")||N.post({__frame_cred:at},l)}catch{}N.post({__frame_connect:!0},"*");try{h?.afterConnect()}catch{}const x=setTimeout,W=clearTimeout;let J=()=>NaN,X=()=>[];try{J=performance.now.bind(performance),X=performance.getEntriesByType.bind(performance)}catch{}let Te=0;const Le=()=>{try{N.post({__frame_alive:!0},"*")}catch{}Te=x(Le,Rn)},Oe=()=>W(Te);Le(),addEventListener("load",Oe,{once:!0});const H=new Promise(l=>{_=l,C=setTimeout(()=>{P(),l()},Bt)}),me=new WeakSet;addEventListener("error",l=>{l.target&&me.add(l.target)},!0);try{_n(jt(),at,()=>{e.then(l=>{try{l?.drawRefusedNotice?.()}catch{}})})}catch{}const qe=()=>{let l=[];try{l=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(E=>!E.sheet&&!E.disabled&&!me.has(E)&&E.getAttribute("href")&&URL.canParse(E.href)&&(!E.media||matchMedia(E.media).matches))}catch{}let v=l.length;return v===0?Promise.resolve():new Promise(E=>{try{const I=tt-J(),j=x(E,I>0?I<tt?I:tt:0),L=()=>{--v===0&&(W(j),E())};for(const K of l)K.addEventListener("load",L,{once:!0}),K.addEventListener("error",L,{once:!0})}catch{E()}})};b.then(()=>{try{w?.restore()}catch{}}),Promise.all([H,b,e]).then(([,,l])=>{if(p?.hostOverlays!==!0||!$)return;let v=!1;try{v=l?.declaresCover?.()===!0}catch{}N.post({__frame_layout:{cover:v}},$)});const oe={cb:null};N.on((l,v)=>{if(Ut(v)&&kr(l)){try{w?.promoted()}catch{}oe.cb?.()}}),H.then(async()=>{if(!p||!$){ct();try{h?.onNoInit()}catch{}return}if(Yt(p.theme),p.hostVisible===!1&&e.then(i=>i?.applyHostVisible?.(!1,O)),p.hostKeys!==void 0){const i=$,g=p.hostKeys;e.then(y=>y?.installHostKeyForward?.(d,g,k=>N.post(k,i)))}try{h?.onInit(p.hot,$)}catch{}const l=$,v=N.port(l),E=(i,g)=>N.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:i,phase:g}},l),I=(i,g,y)=>{new Promise(k=>k(Pn(g,y))).then(k=>E(i,k),()=>E(i))},j=i=>N.post({__frame_cap_recovered:{cap:i}},l);let L=p.brokerGen;const K=()=>h?.boot.ver??"",Me=K(),Z=(i,g)=>{const y=K();W(g.t),g.want=y,g.t=x(()=>{g.done||He(g,y)},Bt),N.post({__frame_cap_want:!0,cap:i,ver:y},l)},Be=(i,g)=>{const y=fe.get(i.cap),k=Se[i.cap];if(!g||!y||y.done||y.want!==i.ver||!ce.test(k))return;if(W(y.t),y.want=void 0,L=i.brokerGen??L,i.ver!==K()){Z(i.cap,y);return}if(!i.grant||i.cap==="network"){He(y,i.ver);return}const Q=pe,G=pe={...Q,capabilities:{...Q.capabilities,[i.cap]:i.grant},capBudgets:{...Q.capBudgets,[i.cap]:{...Q.capBudgets[i.cap],...i.budgets}}};ue(k).then(ee=>{Re.has(k)&&j(i.cap),G.brokerGen=L,ut=!0;try{ee?.install?.(G)}catch{E(i.cap,"install")}finally{ut=!1}},ee=>I(i.cap,k,ee)).then(()=>{y.done||He(y,i.ver)})};let ae=!1,de=!1;N.on((i,g,y)=>{if(g!==l)return;try{if(h?.onShell(i))return}catch{}if(Tr(i)&&Yt(i.__frame_theme.theme),Xr(i)&&Be(i,y),y&&Yr(i)&&(L=i.brokerGen??L),Rr(i)){const G=i.__frame_host_visible.visible;e.then(ee=>ee?.applyHostVisible?.(G,O))}Sr(i)&&Cn(i.__frame_patch,l,y);const k=i?.__fc_mode;k&&typeof k=="object"&&!ae&&nt&&ce.test(nt)&&(ae=!0,ue(nt).then(G=>G.install?.(l,k.on===!0,v)).catch(()=>{}));const Q=i?.__ft_cmd;Q&&typeof Q=="object"&&!de&&ot&&ce.test(ot)&&(de=!0,ue(ot).then(G=>G.install?.(l,Q,v)).catch(()=>{}))});const Pe=Object.keys(p.capabilities??{}).filter(i=>Object.hasOwn(Se,i)).map(i=>[i,Se[i]]).filter(i=>typeof i[1]=="string"&&ce.test(i[1])),V=await Promise.allSettled(Pe.map(([,i])=>ue(i))),se=await e,B=l;if(se?.buildBoot||(t?I("_transforms",t.f,t.e):E("_transforms")),se?.buildBoot)try{pe=se.buildBoot(p,se.TRANSFORMS??{},{shellOrigin:B,mount:ft,hooks:xe,shell:v},i=>N.post({__frame_cap_telemetry:i},B))}catch{E("_transforms","install"),pe=$t(p,B,v)}else pe=$t(p,B,v);se?.buildBoot&&Re.has(Ae??"")&&j("_transforms");const ve=pe;ve.brokerGen=L,V.forEach((i,g)=>{const[y,k]=Pe[g];if(i.status!=="fulfilled"){I(y,k,i.reason);return}Re.has(k)&&j(y);try{i.value?.install?.(ve)}catch{E(y,"install")}});const Ne=p.capWants===!0;Ne&&(it=(i,g)=>{const y=K();if(!y)return g;if(!g.nulled)return g.want!==y&&Z(i,g),g;if(y===g.ver)return g;const k=lt();return fe.set(i,k),Z(i,k),k}),ct(Me,Ne&&K()!==Me?Z:void 0),await b,await qe(),Oe();const ie=ir(X,J);N.post(ie?{__frame_ready:!0,nav:ie}:{__frame_ready:!0},$),e.then(i=>{i?.installSizeReporter?.(B,oe,v),i?.installPaintReporter?.(v)});let Ce=!1;try{Ce=D()}catch{}ke&&Ce?ue(ke).then(i=>i?.boot?.({shellOrigin:l,build:ve.flags.has(nn),hot:h?.hot??null,carried:h?.carried(),presented:()=>h?.presented()??!0})).catch(()=>!1).then(i=>{h?.hydrated(),i!==!0?E("_ldx"):Re.has(ke)&&j("_ldx")}):h?.hydrated()})}else et&&(Jt(),Sn(et,rt,ue,{settle:ct,mount:ft}))})();</script><!-- /frame-runtime -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>♪ 名古屋・犬山・下呂・飛驒高山｜毛毛球の中部深秋大冒險 ♪</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Mochiy+Pop+One&amp;family=Noto+Sans+TC:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    box-sizing:border-box;
+    --bg:#FFF6E9;
+    --card:#FFFFFF;
+    --pink:#FFD3E0;
+    --pink-deep:#FF6F91;
+    --mint:#CFF3E4;
+    --mint-deep:#2FA57D;
+    --butter:#FFE9A8;
+    --butter-deep:#E8A020;
+    --lav:#E4DBFB;
+    --lav-deep:#8C63D6;
+    --sky:#CFEAFB;
+    --sky-deep:#3D93C4;
+    --coral:#FFC9B0;
+    --coral-deep:#E8703F;
+    --ink:#4A3B33;
+    --ink-soft:#93796A;
+    --line:#EBD9BE;
+    --shadow:0 6px 0 rgba(74,59,51,0.10), 0 10px 20px rgba(74,59,51,0.12);
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#231D19; --card:#2E2721; --ink:#F5E9DD; --ink-soft:#CBB6A6; --line:#463A32;
+      --shadow:0 6px 0 rgba(0,0,0,0.3), 0 10px 20px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#231D19; --card:#2E2721; --ink:#F5E9DD; --ink-soft:#CBB6A6; --line:#463A32;
+    --shadow:0 6px 0 rgba(0,0,0,0.3), 0 10px 20px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; scroll-padding-top: calc(70px + env(safe-area-inset-top,0px));}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Baloo 2","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    line-height:1.75; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  h1,h2,h3,h4{ font-family:"Mochiy Pop One","Baloo 2","Noto Sans TC",sans-serif; font-weight:700; margin:0 0 .5em; color:var(--ink); }
+  p{margin:0 0 1em;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 20px; position:relative; z-index:2;}
+  .wrap-narrow{max-width:760px;margin:0 auto;padding:0 20px; position:relative; z-index:2;}
+
+  /* ---------- scattered stickers ---------- */
+  .deco{position:absolute; z-index:1; opacity:.9; pointer-events:none; filter:drop-shadow(0 2px 0 rgba(74,59,51,.08));}
+  @media (max-width:640px){ .deco{ transform:scale(.75) !important; } }
+
+  /* ---------- top nav ---------- */
+  .topnav{
+    position:sticky; top:env(safe-area-inset-top,0px); z-index:50;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(8px); border-bottom:3px dashed var(--line);
+  }
+  .topnav-inner{max-width:920px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:14px;}
+  .topnav .brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:.92rem;white-space:nowrap;color:var(--pink-deep);}
+  .topnav .brand svg{width:28px;height:28px;flex:none;}
+  .topnav nav{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;}
+  .topnav nav::-webkit-scrollbar{display:none;}
+  .topnav nav a{
+    white-space:nowrap;text-decoration:none;color:#fff;font-size:.8rem;font-weight:700;
+    padding:7px 14px;border-radius:20px; box-shadow:0 3px 0 rgba(74,59,51,.15);
+    transform:rotate(-1.5deg); display:inline-block; transition:transform .15s;
+  }
+  .topnav nav a:hover{ transform:rotate(0deg) scale(1.05); }
+  .topnav nav a:nth-child(1){background:var(--pink-deep);}
+  .topnav nav a:nth-child(2){background:var(--sky-deep); transform:rotate(1.5deg);}
+  .topnav nav a:nth-child(3){background:var(--butter-deep); transform:rotate(-1.2deg);}
+  .topnav nav a:nth-child(4){background:var(--lav-deep); transform:rotate(1.2deg);}
+  .topnav nav a:nth-child(5){background:var(--mint-deep); transform:rotate(-1.5deg);}
+
+  /* ---------- cover ---------- */
+  .cover{position:relative;padding:60px 20px 48px;text-align:center;overflow:hidden;
+    background:
+      radial-gradient(circle at 12% 15%, color-mix(in srgb, var(--pink) 60%, transparent), transparent 38%),
+      radial-gradient(circle at 88% 10%, color-mix(in srgb, var(--sky) 60%, transparent), transparent 40%),
+      radial-gradient(circle at 50% 95%, color-mix(in srgb, var(--butter) 50%, transparent), transparent 45%);
+  }
+  .cover .kicker{
+    display:inline-block;font-size:.72rem;letter-spacing:.18em;color:var(--mint-deep);font-weight:700;
+    background:var(--mint);padding:6px 18px;border-radius:20px;margin-bottom:18px;
+    transform:rotate(-2deg); box-shadow:var(--shadow);
+  }
+  .cover h1{font-size:clamp(1.7rem,5.4vw,2.8rem);line-height:1.45;margin-bottom:.3em;
+    text-shadow: 3px 0 0 var(--bg), -3px 0 0 var(--bg), 0 3px 0 var(--bg), 0 -3px 0 var(--bg), 2px 2px 0 var(--bg), -2px -2px 0 var(--bg), 2px -2px 0 var(--bg), -2px 2px 0 var(--bg);
+  }
+  .cover h1 em{font-style:normal;color:var(--pink-deep);}
+  .cover .dates{
+    display:inline-block;font-size:.9rem;color:var(--ink);margin-bottom:26px;font-weight:700;
+    background:var(--card);border:3px solid var(--butter-deep);padding:7px 20px;border-radius:20px;
+    box-shadow:var(--shadow); transform:rotate(1deg);
+  }
+  .cover .tagline{max-width:520px;margin:0 auto 26px;color:var(--ink-soft);font-size:.96rem;}
+  .cover svg.scene{width:100%;max-width:640px;height:auto;margin:0 auto;display:block;}
+  .cover .note-tag{
+    margin-top:20px;display:inline-flex;gap:8px;align-items:center;font-size:.76rem;color:var(--lav-deep);
+    background:var(--lav);padding:8px 18px;border-radius:14px;max-width:480px; transform:rotate(-1deg);
+    border:2px dashed var(--lav-deep);
+  }
+
+  .divider{display:flex;align-items:center;gap:14px;max-width:220px;margin:36px auto;color:var(--butter-deep); font-size:1.3rem;}
+  .divider .ln{flex:1;height:3px;border-radius:2px;background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 10px);}
+
+  /* ---------- section shell ---------- */
+  section{padding:54px 0; position:relative; overflow:hidden;}
+  section + section{ border-top:3px dashed var(--line); }
+  #overview{ background:repeating-radial-gradient(circle at 6% 12%, var(--mint) 0 3px, transparent 3px 46px); }
+  #itinerary{ background:repeating-radial-gradient(circle at 94% 8%, var(--pink) 0 3px, transparent 3px 46px); }
+  #explore{ background:repeating-radial-gradient(circle at 4% 90%, var(--butter) 0 3px, transparent 3px 46px); }
+  #stories{ background:repeating-radial-gradient(circle at 96% 85%, var(--lav) 0 3px, transparent 3px 46px); }
+  #info{ background:repeating-radial-gradient(circle at 8% 15%, var(--sky) 0 3px, transparent 3px 46px); }
+
+  .eyebrow{
+    display:inline-block;color:#fff;font-weight:700;font-size:.72rem;letter-spacing:.1em;
+    margin-bottom:10px;padding:4px 15px;border-radius:14px; transform:rotate(-1.5deg);
+  }
+  #overview .eyebrow{background:var(--mint-deep);}
+  #itinerary .eyebrow{background:var(--pink-deep);}
+  #explore .eyebrow{background:var(--butter-deep);}
+  #stories .eyebrow{background:var(--lav-deep);}
+  #info .eyebrow{background:var(--sky-deep);}
+
+  .section-head{margin-bottom:32px;display:flex;gap:16px;align-items:flex-start;}
+  .section-head .mascot-mini{width:60px;height:60px;flex:none;margin-top:2px; filter:drop-shadow(0 3px 0 rgba(74,59,51,.12));}
+  .section-head h2{font-size:clamp(1.4rem,3vw,2rem);}
+  .section-head p{color:var(--ink-soft);max-width:600px;font-size:.94rem;}
+
+  /* ---------- overview facts ---------- */
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-bottom:32px;}
+  .fact{ background:var(--card);border:2px solid var(--line);border-radius:18px;padding:18px 20px;box-shadow:var(--shadow); position:relative; }
+  .fact:nth-child(odd){ transform:rotate(-1deg); }
+  .fact:nth-child(even){ transform:rotate(1deg); }
+  .fact::before{ content:""; position:absolute; top:-8px; left:50%; margin-left:-22px; width:44px; height:16px;
+    background:repeating-linear-gradient(45deg, var(--butter) 0 4px, #fff0 4px 8px); opacity:.85; transform:rotate(-3deg); border-radius:2px; }
+  .fact .label{display:flex;align-items:center;gap:6px;font-size:.74rem;color:var(--mint-deep);font-weight:700;letter-spacing:.03em;margin-bottom:6px;}
+  .fact .value{font-family:"Mochiy Pop One",sans-serif;font-size:1.05rem;font-weight:700;}
+  .fact .sub{font-size:.82rem;color:var(--ink-soft);margin-top:4px;}
+
+  .hotel-list{display:grid;gap:14px;}
+  .hotel{
+    display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:center;
+    background:var(--card);border:2px solid var(--line);border-radius:18px;padding:14px 18px;box-shadow:var(--shadow);
+  }
+  .hotel:nth-child(1){border-left:6px solid var(--pink-deep);}
+  .hotel:nth-child(2){border-left:6px solid var(--sky-deep);}
+  .hotel:nth-child(3){border-left:6px solid var(--butter-deep);}
+  .hotel .num{
+    width:44px;height:44px;border-radius:50%;background:var(--butter);display:flex;align-items:center;justify-content:center;
+    font-family:"Mochiy Pop One",sans-serif;font-weight:700;font-size:1rem;color:var(--butter-deep);
+    border:2px dashed var(--card);
+  }
+  .hotel h4{margin-bottom:3px;font-size:1rem;}
+  .hotel .meta{color:var(--ink-soft);font-size:.86rem;}
+
+  /* ---------- itinerary / timeline ---------- */
+  .day{margin-bottom:46px;background:var(--card);border:2px solid var(--line);border-radius:22px;padding:26px 22px 22px;box-shadow:var(--shadow); position:relative;}
+  .day:nth-child(odd){transform:rotate(-.4deg);}
+  .day:nth-child(even){transform:rotate(.4deg);}
+  .day:last-child{margin-bottom:0;}
+  .day::before{ content:""; position:absolute; top:-10px; left:28px; width:52px; height:18px;
+    background:repeating-linear-gradient(45deg, var(--pink) 0 4px, #fff0 4px 8px); opacity:.9; transform:rotate(-4deg); border-radius:2px; }
+  .day-head{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap;}
+  .day-num{
+    font-family:"Mochiy Pop One",sans-serif;font-size:.85rem;color:#fff;
+    padding:7px 16px;border-radius:14px;letter-spacing:.02em; box-shadow:0 3px 0 rgba(0,0,0,.12); transform:rotate(-2deg);
+  }
+  .day:nth-child(6n+1) .day-num{background:var(--pink-deep);}
+  .day:nth-child(6n+2) .day-num{background:var(--sky-deep);}
+  .day:nth-child(6n+3) .day-num{background:var(--mint-deep);}
+  .day:nth-child(6n+4) .day-num{background:var(--butter-deep);}
+  .day:nth-child(6n+5) .day-num{background:var(--lav-deep);}
+  .day:nth-child(6n+6) .day-num{background:var(--coral-deep);}
+  .day-head h3{font-size:1.15rem;margin:0;}
+  .day-date{color:var(--ink-soft);font-size:.84rem;background:var(--mint);padding:3px 12px;border-radius:10px;}
+
+  .timeline{list-style:none;margin:0;padding:0;border-left:3px dotted var(--line);margin-left:6px;}
+  .timeline li{position:relative;padding:0 0 18px 22px;}
+  .timeline li:last-child{padding-bottom:0;}
+  .timeline li::before{ content:"●";position:absolute;left:-11px;top:1px;font-size:.6rem; }
+  .day:nth-child(6n+1) .timeline li::before{color:var(--pink-deep);}
+  .day:nth-child(6n+2) .timeline li::before{color:var(--sky-deep);}
+  .day:nth-child(6n+3) .timeline li::before{color:var(--mint-deep);}
+  .day:nth-child(6n+4) .timeline li::before{color:var(--butter-deep);}
+  .day:nth-child(6n+5) .timeline li::before{color:var(--lav-deep);}
+  .day:nth-child(6n+6) .timeline li::before{color:var(--coral-deep);}
+  .timeline .time{ display:inline-block;font-weight:700;color:var(--sky-deep);font-size:.84rem;margin-right:6px;font-variant-numeric:tabular-nums; }
+  .timeline .mode{margin-right:5px;opacity:.9;}
+  .timeline .place{font-weight:700;}
+  .timeline .note{color:var(--ink-soft);font-size:.88rem;margin-top:3px;}
+
+  /* ---------- explore regions ---------- */
+  .region{margin-bottom:40px;}
+  .region:last-child{margin-bottom:0;}
+  .region-title{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .region-title h3{
+    font-size:1.02rem;margin:0;white-space:nowrap;background:var(--lav);color:var(--lav-deep);
+    padding:6px 16px;border-radius:12px; transform:rotate(-1deg); box-shadow:0 3px 0 rgba(140,99,214,.18);
+  }
+  .region-title .ln{flex:1;height:3px;border-radius:2px;background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 10px);}
+  .spot-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;}
+  .spot{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:14px 16px; transition:transform .15s; position:relative;}
+  .spot:nth-child(4n+1){transform:rotate(-.6deg);}
+  .spot:nth-child(4n+2){transform:rotate(.6deg);}
+  .spot:nth-child(4n+3){transform:rotate(-.3deg);}
+  .spot:nth-child(4n+4){transform:rotate(.3deg);}
+  .spot:hover{ transform:rotate(0deg) translateY(-3px); box-shadow:var(--shadow); }
+  .spot .tag{ display:inline-block;font-size:.68rem;font-weight:700;color:#fff;border-radius:12px;padding:2px 11px;margin-bottom:7px; }
+  .spot[data-cat="景點"] .tag{background:var(--sky-deep);}
+  .spot[data-cat="餐廳"] .tag{background:var(--pink-deep);}
+  .spot[data-cat="咖啡廳"] .tag{background:#B0703A;}
+  .spot[data-cat="小吃"] .tag{background:var(--butter-deep);}
+  .spot[data-cat="購物"] .tag{background:var(--lav-deep);}
+  .spot[data-cat="體驗"] .tag{background:var(--mint-deep);}
+  .spot h4{font-size:.96rem;margin:0 0 4px;}
+  .spot .hours{font-size:.8rem;color:var(--ink-soft);margin-bottom:4px;}
+  .spot .note{font-size:.84rem;color:var(--ink-soft);}
+
+  /* ---------- story ---------- */
+  .story-lede{
+    font-size:1.02rem;line-height:1.95;color:var(--ink);margin-bottom:26px;
+    background:var(--lav);border-radius:18px;padding:20px 22px; border:2px dashed var(--lav-deep); transform:rotate(-.4deg);
+  }
+  .act{margin-bottom:26px;display:flex;gap:12px;}
+  .act .bullet{flex:none;width:32px;height:32px;border-radius:50%;color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-family:"Mochiy Pop One",sans-serif;font-size:.85rem;margin-top:2px;
+    box-shadow:0 3px 0 rgba(0,0,0,.12);}
+  .act:nth-child(5n+1) .bullet{background:var(--pink-deep);}
+  .act:nth-child(5n+2) .bullet{background:var(--sky-deep);}
+  .act:nth-child(5n+3) .bullet{background:var(--mint-deep);}
+  .act:nth-child(5n+4) .bullet{background:var(--butter-deep);}
+  .act:nth-child(5n+5) .bullet{background:var(--lav-deep);}
+  .act h4{font-size:.98rem;color:var(--pink-deep);margin-bottom:6px;}
+  .act p{color:var(--ink);font-size:.94rem;}
+
+  .lore-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:8px;}
+  .lore{background:var(--card);border:2px solid var(--line);padding:16px 18px;border-radius:16px;}
+  .lore:nth-child(odd){transform:rotate(-.5deg);}
+  .lore:nth-child(even){transform:rotate(.5deg);}
+  .lore h4{font-size:.94rem;margin-bottom:6px;color:var(--mint-deep);}
+  .lore p{font-size:.86rem;color:var(--ink-soft);margin:0;}
+
+  /* ---------- info ---------- */
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;}
+  .info-card{padding:20px 18px;background:var(--card);border:2px solid var(--line);border-radius:18px;box-shadow:var(--shadow);}
+  .info-card:nth-child(1){border-top:5px solid var(--sky-deep);}
+  .info-card:nth-child(2){border-top:5px solid var(--pink-deep);}
+  .info-card:nth-child(3){border-top:5px solid var(--mint-deep);}
+  .info-card h4{font-size:.94rem;margin-bottom:8px;color:var(--sky-deep);display:flex;align-items:center;gap:6px;}
+  .info-card ul{margin:0;padding-left:1.1em;font-size:.88rem;color:var(--ink);}
+  .info-card li{margin-bottom:6px;}
+
+  /* speech bubble tip */
+  .tip-bubble{
+    display:flex; gap:12px; align-items:flex-start; background:var(--card); border:3px solid var(--pink-deep);
+    border-radius:18px; padding:14px 16px; margin:22px 0; position:relative; box-shadow:var(--shadow); transform:rotate(-.6deg);
+  }
+  .tip-bubble svg{width:42px;height:42px;flex:none;}
+  .tip-bubble p{margin:0;font-size:.88rem;color:var(--ink);}
+  .tip-bubble .who{font-weight:700;color:var(--pink-deep);font-size:.8rem;display:block;margin-bottom:2px;}
+
+  footer{
+    padding:40px 20px calc(40px + env(safe-area-inset-bottom,0px));
+    text-align:center;color:var(--ink-soft);font-size:.82rem;border-top:3px dashed var(--line);
+    display:flex;flex-direction:column;align-items:center;gap:10px;
+    background:repeating-radial-gradient(circle at 50% 0%, var(--butter) 0 3px, transparent 3px 40px);
+  }
+  footer svg{width:48px;height:48px;}
+  footer .duo{display:flex; gap:10px; align-items:center;}
+  footer .duo svg:nth-child(1){transform:rotate(-8deg);}
+  footer .duo svg:nth-child(2){transform:rotate(8deg);}
+
+  @media (max-width:600px){
+    .cover{padding:46px 16px 36px;}
+    section{padding:40px 0;}
+    .wrap,.wrap-narrow{padding:0 16px;}
+    .section-head{gap:10px;}
+    .section-head .mascot-mini{width:46px;height:46px;}
+  }
+
+  @media print{
+    .topnav{ display:none; }
+    .deco{ display:none; }
+    body{ background:var(--bg); }
+    section{ background:none !important; }
+    section, .day, .fact, .spot, .info-card, .lore, .hotel{ break-inside:avoid; }
+    .cover{ break-after:page; }
+    #overview, #itinerary, #explore, #stories, #info { break-before:page; }
+    * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    a{ color:inherit; text-decoration:none; }
+  }
+</style>
+<style type="text/css">
+            .jcpwm-preloader {
+                transform: translateX(0px) !important;
+            }
+        </style></head>
+<body>
+
+<!-- ============ 隱藏 SVG 元件庫：原創吉祥物 毛毛（栗子色圓滾滾）與 波波（薄荷色毛球）============ -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <!-- 毛毛：栗子色圓滾滾主角，尖尖小耳朵＋蓬鬆尾巴 -->
+    <symbol id="mao" viewBox="0 0 100 100">
+      <ellipse cx="50" cy="60" rx="34" ry="30" fill="#F2B98A"></ellipse>
+      <path d="M22 40 Q18 18 34 24 Q30 36 30 44 Z" fill="#F2B98A"></path>
+      <path d="M78 40 Q82 18 66 24 Q70 36 70 44 Z" fill="#F2B98A"></path>
+      <path d="M24 40 Q22 26 32 30 Q29 37 29 42 Z" fill="#FFDCC0"></path>
+      <path d="M76 40 Q78 26 68 30 Q71 37 71 42 Z" fill="#FFDCC0"></path>
+      <circle cx="38" cy="58" r="3.4" fill="#5A4A42"></circle>
+      <circle cx="62" cy="58" r="3.4" fill="#5A4A42"></circle>
+      <ellipse cx="30" cy="66" rx="6" ry="4" fill="#FFB6C1" opacity=".8"></ellipse>
+      <ellipse cx="70" cy="66" rx="6" ry="4" fill="#FFB6C1" opacity=".8"></ellipse>
+      <path d="M44 68 Q50 73 56 68" stroke="#5A4A42" stroke-width="2.4" fill="none" stroke-linecap="round"></path>
+    </symbol>
+    <!-- 波波：薄荷色毛球夥伴，天線呆毛 -->
+    <symbol id="bobo" viewBox="0 0 100 100">
+      <circle cx="50" cy="58" r="32" fill="#B7EBD6"></circle>
+      <path d="M50 26 Q46 12 54 10 Q56 18 50 26Z" fill="#B7EBD6"></path>
+      <circle cx="54" cy="10" r="4" fill="#B7EBD6"></circle>
+      <circle cx="39" cy="56" r="3.2" fill="#3F7F65"></circle>
+      <circle cx="61" cy="56" r="3.2" fill="#3F7F65"></circle>
+      <ellipse cx="32" cy="63" rx="5.5" ry="3.6" fill="#FFC2CE" opacity=".85"></ellipse>
+      <ellipse cx="68" cy="63" rx="5.5" ry="3.6" fill="#FFC2CE" opacity=".85"></ellipse>
+      <path d="M42 66 Q50 70 58 66" stroke="#3F7F65" stroke-width="2.2" fill="none" stroke-linecap="round"></path>
+    </symbol>
+
+    <symbol id="star" viewBox="0 0 100 100"><path d="M50 8 L60 38 L92 42 L66 62 L76 94 L50 74 L24 94 L34 62 L8 42 L40 38 Z" fill="#FFD35C"></path></symbol>
+    <symbol id="paw" viewBox="0 0 100 100"><ellipse cx="50" cy="65" rx="26" ry="20" fill="#FF9FB5"></ellipse><circle cx="22" cy="42" r="11" fill="#FF9FB5"></circle><circle cx="46" cy="28" r="11" fill="#FF9FB5"></circle><circle cx="70" cy="28" r="11" fill="#FF9FB5"></circle><circle cx="88" cy="46" r="10" fill="#FF9FB5"></circle></symbol>
+    <symbol id="leaf" viewBox="0 0 100 100"><path d="M50 10 C80 25 85 65 50 92 C15 65 20 25 50 10 Z" fill="#E8A020"></path><line x1="50" y1="22" x2="50" y2="86" stroke="#B67A12" stroke-width="3"></line></symbol>
+    <symbol id="heart" viewBox="0 0 100 100"><path d="M50 88 C10 60 8 30 30 18 C42 12 50 22 50 30 C50 22 58 12 70 18 C92 30 90 60 50 88 Z" fill="#FF6F91"></path></symbol>
+  </defs>
+</svg>
+
+<div class="topnav">
+  <div class="topnav-inner">
+    <span class="brand"><svg viewBox="0 0 100 100"><use href="#mao" width="100" height="100"></use></svg>中部深秋見聞錄</span>
+    <nav>
+      <a href="#overview">旅程總覽</a>
+      <a href="#itinerary">每日行程</a>
+      <a href="#explore">景點美食</a>
+      <a href="#stories">戰國物語</a>
+      <a href="#info">實用資訊</a>
+    </nav>
+  </div>
+</div>
+
+<header class="cover">
+  <div class="kicker">✦ TRAVEL JOURNAL — CHUBU, JAPAN ✦</div>
+  <h1>名古屋・犬山・下呂・<em>飛驒高山</em></h1>
+  <div class="dates">🎒 2026 年 10 月 23 日（五）— 10 月 28 日（三）｜六日五夜</div>
+
+  <svg class="scene" viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="毛毛與波波在楓葉城堡前的插畫">
+    <defs>
+      <radialGradient id="skyglow" cx="50%" cy="15%" r="70%">
+        <stop offset="0%" stop-color="#FFE9A8" stop-opacity="0.55"></stop>
+        <stop offset="100%" stop-color="#FFE9A8" stop-opacity="0"></stop>
+      </radialGradient>
+    </defs>
+    <rect x="0" y="0" width="640" height="260" fill="url(#skyglow)"></rect>
+    <!-- hills -->
+    <path d="M0,190 L90,150 L160,180 L240,130 L320,175 L400,140 L480,185 L560,135 L640,175 L640,260 L0,260 Z" fill="#CFF3E4" opacity="0.8"></path>
+    <path d="M0,210 L100,180 L200,205 L300,170 L400,205 L500,175 L600,210 L640,195 L640,260 L0,260 Z" fill="#9FDFC0" opacity="0.7"></path>
+    <!-- cute round castle -->
+    <g transform="translate(255,95)">
+      <rect x="0" y="60" width="100" height="55" rx="12" fill="#FFD3E0"></rect>
+      <rect x="18" y="30" width="64" height="34" rx="10" fill="#FFB6C1"></rect>
+      <rect x="32" y="8" width="36" height="26" rx="8" fill="#FF8FAE"></rect>
+      <polygon points="-6,60 50,26 106,60" fill="#F4B740"></polygon>
+      <polygon points="12,30 50,10 88,30" fill="#F4B740"></polygon>
+      <circle cx="50" cy="20" r="4" fill="#fff"></circle>
+      <rect x="40" y="80" width="20" height="30" rx="6" fill="#fff" opacity="0.85"></rect>
+    </g>
+    <!-- torii -->
+    <g stroke="#FF8FAE" stroke-width="7" fill="none" stroke-linecap="round">
+      <line x1="140" y1="170" x2="140" y2="225"></line>
+      <line x1="188" y1="170" x2="188" y2="225"></line>
+      <line x1="128" y1="172" x2="200" y2="172"></line>
+      <line x1="134" y1="158" x2="194" y2="158"></line>
+    </g>
+    <!-- maple leaves -->
+    <g fill="#F4B740" opacity="0.9">
+      <circle cx="80" cy="60" r="5"></circle>
+      <circle cx="560" cy="50" r="4"></circle>
+      <circle cx="500" cy="90" r="3.5"></circle>
+      <circle cx="110" cy="100" r="3"></circle>
+    </g>
+    <!-- mao & bobo -->
+    <g transform="translate(60,150) scale(0.9)"><use href="#mao" width="100" height="100"></use></g>
+    <g transform="translate(520,160) scale(0.72)"><use href="#bobo" width="100" height="100"></use></g>
+  </svg>
+
+  <p class="tagline">從尾張的戰國烽煙，到下呂的溫泉煙嵐——毛毛與波波要帶大家走過城下町、老街與湯屋，展開一趟軟萌又扎實的中部深秋之旅。</p>
+  <div class="note-tag">🎨 手冊採原創吉祥物「毛毛」與「波波」插畫，非官方角色圖像</div>
+
+  <svg class="deco" viewBox="0 0 100 100" style="width:34px;top:18px;left:6%;transform:rotate(-15deg);"><use href="#star" width="100" height="100"></use></svg>
+  <svg class="deco" viewBox="0 0 100 100" style="width:28px;top:70px;right:8%;transform:rotate(12deg);"><use href="#star" width="100" height="100"></use></svg>
+  <svg class="deco" viewBox="0 0 100 100" style="width:30px;bottom:30px;left:10%;transform:rotate(-8deg);"><use href="#leaf" width="100" height="100"></use></svg>
+  <svg class="deco" viewBox="0 0 100 100" style="width:26px;bottom:60px;right:14%;transform:rotate(10deg);"><use href="#paw" width="100" height="100"></use></svg>
+</header>
+
+<main>
+
+<!-- ================= 旅程總覽 ================= -->
+<section id="overview">
+  <svg class="deco" viewBox="0 0 100 100" style="width:26px;top:24px;right:6%;transform:rotate(14deg);"><use href="#paw" width="100" height="100"></use></svg>
+  <svg class="deco" viewBox="0 0 100 100" style="width:22px;bottom:20px;left:4%;transform:rotate(-10deg);"><use href="#star" width="100" height="100"></use></svg>
+
+  <div class="wrap">
+    <div class="section-head">
+      <svg class="mascot-mini" viewBox="0 0 100 100"><use href="#mao" width="100" height="100"></use></svg>
+      <div>
+        <div class="eyebrow">OVERVIEW</div>
+        <h2>旅程總覽</h2>
+        <p>以名古屋為據點，向外延伸至犬山城下町、飛驒高山老街與下呂溫泉，感受中部地方從戰國城池到千年湯泉的層次風景。</p>
+      </div>
+    </div>
+
+    <div class="facts">
+      <div class="fact"><div class="label">🗓 行程天數</div><div class="value">6 天 5 夜</div><div class="sub">2026/10/23（五）— 10/28（三）</div></div>
+      <div class="fact"><div class="label">📍 主要城市</div><div class="value">名古屋市</div><div class="sub">含犬山、下呂溫泉、飛驒高山</div></div>
+      <div class="fact"><div class="label">🛫 去程航班</div><div class="value">虎航 IT206</div><div class="sub">TPE T1 09:00 → NGO T2 12:55</div></div>
+      <div class="fact"><div class="label">🛬 回程航班</div><div class="value">虎航 IT209</div><div class="sub">NGO T2 21:15 → TPE T1 23:50</div></div>
+    </div>
+
+    <h3 style="font-size:1rem;margin-bottom:12px;">🏨 住宿安排</h3>
+    <div class="hotel-list">
+      <div class="hotel"><div class="num">01</div><div><h4>拉斐恩蒙寶蘭飯店｜名古屋站</h4><div class="meta">10/23 – 10/25（兩晚）・雙人一大床房</div></div></div>
+      <div class="hotel"><div class="num">02</div><div><h4>下呂溫泉｜水明館</h4><div class="meta">10/25 – 10/27（兩晚）・四人榻榻米房・表訂 14:00 可 Check in，客房用餐最晚 19:00 開始</div></div></div>
+      <div class="hotel"><div class="num">03</div><div><h4>名古屋西鐵克魯姆飯店｜榮</h4><div class="meta">10/27 – 10/28（一晚）・雙床房 × 2</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 每日行程 ================= -->
+<section id="itinerary">
+  <svg class="deco" viewBox="0 0 100 100" style="width:26px;top:30px;left:5%;transform:rotate(-12deg);"><use href="#heart" width="100" height="100"></use></svg>
+  <svg class="deco" viewBox="0 0 100 100" style="width:24px;bottom:40px;right:6%;transform:rotate(16deg);"><use href="#star" width="100" height="100"></use></svg>
+
+  <div class="wrap">
+    <div class="section-head">
+      <svg class="mascot-mini" viewBox="0 0 100 100"><use href="#bobo" width="100" height="100"></use></svg>
+      <div>
+        <div class="eyebrow">DAY BY DAY</div>
+        <h2>每日行程</h2>
+        <p>以下時間多數為預估參考，實際依現場狀況與交通調整；標示「自由活動」的段落可依當日興致彈性安排。</p>
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-head"><span class="day-num">DAY 1</span><h3>抵達名古屋・站前初體驗</h3><span class="day-date">2026/10/23（五）</span></div>
+      <ul class="timeline">
+        <li><span class="time">09:00</span><span class="mode">✈</span><span class="place">桃園機場 T1 出發</span><div class="note">虎航 IT206</div></li>
+        <li><span class="time">12:55</span><span class="mode">✈</span><span class="place">抵達中部國際機場</span></li>
+        <li><span class="time">15:00</span><span class="mode">🚄</span><span class="place">Check in｜拉斐恩蒙寶蘭飯店</span></li>
+        <li><span class="time">15:15</span><span class="mode">🚶</span><span class="place">HARBS 高島屋店</span><div class="note">名古屋 JR Gate Tower 四樓，下午茶時光</div></li>
+        <li><span class="time">自由活動</span><span class="place">Échiré Pâtisserie Au Beurre｜JR名古屋高島屋店</span><div class="note">名古屋限定泡芙、自家奶油甜點</div></li>
+        <li><span class="time">午餐</span><span class="place">熱田蓬萊軒</span><div class="note">鰻魚三吃，名古屋名物</div></li>
+        <li><span class="time">10 分</span><span class="mode">🚶</span><span class="place">Onitsuka Tiger 名古屋</span></li>
+        <li><span class="time">1.5h</span><span class="place">chiikawa parco｜THE GUEST CAFE BY PARCO</span></li>
+        <li><span class="time">順道</span><span class="place">Konparu Sun Road Branch</span><div class="note">招牌炸蝦三明治，大須商店街亦有分店</div></li>
+        <li><span class="time">提醒</span><span class="place">先購買犬山城下町套票</span><div class="note">隔日行程所需，建議提前買好</div></li>
+        <li><span class="time">18:30</span><span class="place">大眾酒泉</span><div class="note">清酒喝到飽，晚餐兼小酌</div></li>
+        <li><span class="time">22:00</span><span class="place">返回拉斐恩蒙寶蘭飯店</span></li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div class="day-head"><span class="day-num">DAY 2</span><h3>犬山城下町・戰國城池巡禮</h3><span class="day-date">2026/10/24（六）</span></div>
+      <ul class="timeline">
+        <li><span class="time">08:00</span><span class="place">飯店早餐</span></li>
+        <li><span class="time">09:00→09:33</span><span class="mode">🚄</span><span class="place">名古屋 → 犬山遊園站</span><div class="note">出示／購買★犬山城下町套票★</div></li>
+        <li><span class="time">09:30</span><span class="mode">🚶</span><span class="place">有樂苑</span><div class="note">停留約 1.5 小時，門口可加購弘庵茶室抹茶呈茶席券（600円）</div></li>
+        <li><span class="time">11:00</span><span class="place">犬山城</span><div class="note">日本現存最古老天守閣之一，國寶名城</div></li>
+        <li><span class="time">自由活動</span><span class="place">針綱神社・三光稻荷神社</span><div class="note">分別以安產長壽、招財戀愛聞名</div></li>
+        <li><span class="time">午餐自理</span><span class="place">犬山城下町</span><div class="note">小吃與餐廳選擇眾多，可依步調自由挑選</div></li>
+        <li><span class="time">（14–15 時許）</span><span class="place">彈性安排：名古屋城</span><div class="note">若提早返回名古屋，可順道排入</div></li>
+        <li><span class="time">17:30</span><span class="mode">🚄</span><span class="place">名鐵犬山 → 名古屋</span><div class="note">最晚建議搭乘班次</div></li>
+        <li><span class="time">30 分</span><span class="mode">🚶</span><span class="place">返回飯店</span><div class="note">放置伴手禮、稍事整理</div></li>
+        <li><span class="time">18:30</span><span class="mode">🚇</span><span class="place">鮨功</span><div class="note">已訂位，Omakase，約 2 小時</div></li>
+        <li><span class="time">21:00</span><span class="place">綠洲21 ＋ 中部電力未來塔</span><div class="note">飯後散步賞夜景；隔日要去名古屋城者請先整理好行李</div></li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div class="day-head"><span class="day-num">DAY 3</span><h3>名古屋城・轉往下呂溫泉</h3><span class="day-date">2026/10/25（日）</span></div>
+      <ul class="timeline">
+        <li><span class="time">08:30</span><span class="place">飯店早餐，各自 Check out 並寄放行李</span></li>
+        <li><span class="time">09:00</span><span class="mode">🚇</span><span class="place">名古屋城</span><div class="note">停留約 1.5 小時，早起可從容參觀</div></li>
+        <li><span class="time">11:00</span><span class="place">午餐自理</span><div class="note">可提早購買可頌或三明治，於車上享用</div></li>
+        <li><span class="time">11:43→13:26</span><span class="mode">🚄</span><span class="place">名古屋 → 下呂</span><div class="note">集合一起搭車</div></li>
+        <li><span class="time">14:00</span><span class="place">Check in｜下呂溫泉 水明館</span><div class="note">可先預約接駁車</div></li>
+        <li><span class="time">自由活動</span><span class="place">下呂溫泉街</span></li>
+        <li><span class="time">🚌6 / 🚶20</span><span class="place">下呂合掌村</span><div class="note">濃飛巴士合掌村線約一小時一班，需事先規劃時間；步行前往需爬坡</div></li>
+        <li><span class="time">傍晚</span><span class="place">享受飯店溫泉設施</span></li>
+        <li><span class="time">待訂</span><span class="place">飯店晚餐</span><div class="note">客房用餐最晚 19:00 開始</div></li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div class="day-head"><span class="day-num">DAY 4</span><h3>飛驒高山一日遊</h3><span class="day-date">2026/10/26（一）</span></div>
+      <ul class="timeline">
+        <li><span class="time">08:00</span><span class="place">飯店早餐</span></li>
+        <li><span class="time">09:27→10:16</span><span class="mode">🚄</span><span class="place">下呂 → 高山</span></li>
+        <li><span class="time">11:00</span><span class="mode">🚶3</span><span class="place">味藏天國｜飛驒牛燒肉</span><div class="note">抽號碼牌時段 11:00–14:00，建議先抽牌；必點菲力牛排、橫隔膜，和牛偏油，不宜點太多</div></li>
+        <li><span class="time">自由活動 1h</span><span class="mode">🚶10</span><span class="place">高山陣屋</span><div class="note">日本唯一完整保存的江戶時代代官所建築，歷史逾 400 年</div></li>
+        <li><span class="time">約 3h</span><span class="mode">🚶</span><span class="place">飛驒高山老街</span></li>
+        <li><span class="time">順遊</span><span class="place">飛驒特牛（握壽司）</span><div class="note">老街招牌飛驒牛壽司</div></li>
+        <li><span class="time">順遊</span><span class="place">大野屋（大のや醸造）</span><div class="note">味噌老鋪</div></li>
+        <li><span class="time">順遊</span><span class="place">舩坂酒造店</span><div class="note">投幣式試飲各種清酒，扭蛋機可扭清酒杯帶走</div></li>
+        <li><span class="time">順遊</span><span class="place">coffee don</span><div class="note">逾 70 年歷史，飛驒高山第一家咖啡店，老派喫茶店氛圍</div></li>
+        <li><span class="time">16:33→17:21</span><span class="mode">🚄</span><span class="place">高山 → 下呂</span><div class="note">若錯過此班，下一班需等到 19:30</div></li>
+        <li><span class="time">19:00</span><span class="place">飯店晚餐</span></li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div class="day-head"><span class="day-num">DAY 5</span><h3>返回名古屋・榮商圈</h3><span class="day-date">2026/10/27（二）</span></div>
+      <ul class="timeline">
+        <li><span class="time">自由活動</span><span class="place">飯店早餐，最後享受溫泉設施</span></li>
+        <li><span class="time">11:00</span><span class="place">Check out</span><div class="note">先寄放行李</div></li>
+        <li><span class="time">11:15</span><span class="mode">🚶13</span><span class="place">Ça va pas la tête?</span><div class="note">不定休，停留約 40 分鐘</div></li>
+        <li><span class="time">12:22→14:04</span><span class="mode">🚄</span><span class="place">下呂 → 名古屋</span></li>
+        <li><span class="time">14:30</span><span class="mode">🚇12</span><span class="place">Check in｜名古屋西鐵克魯姆飯店</span></li>
+        <li><span class="time">彈性安排</span><span class="place">名古屋城</span><div class="note">若前幾天尚未造訪，可安排在此時段</div></li>
+        <li><span class="time">1h</span><span class="mode">🚌</span><span class="place">大須觀音</span><div class="note">營業至 19:00</div></li>
+        <li><span class="time">順遊</span><span class="mode">🚶</span><span class="place">大須商店街</span></li>
+        <li><span class="time">晚餐自理</span><span class="place">唐吉訶德榮本店</span><div class="note">逛街、採買宵夜零食</div></li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <div class="day-head"><span class="day-num">DAY 6</span><h3>熱田神宮・賦歸</h3><span class="day-date">2026/10/28（三）</span></div>
+      <ul class="timeline">
+        <li><span class="time">早晨</span><span class="place">飯店早餐（生吐司）</span><div class="note">Check out 並寄放行李</div></li>
+        <li><span class="time">10:00</span><span class="mode">🚇20</span><span class="place">東別院 暮らしの朝市</span><div class="note">每月 8、18、28 日限定舉辦，能遇上是幸運</div></li>
+        <li><span class="time">11:30</span><span class="mode">🚇25</span><span class="place">熱田神宮</span><div class="note">停留約 2 小時，供奉三神器之一「草薙劍」</div></li>
+        <li><span class="time">14:00</span><span class="mode">🚇30</span><span class="place">榮商圈｜最後採購</span></li>
+        <li><span class="time">晚餐待排</span><span class="place">可考慮提早前往機場用餐</span><div class="note">中部機場內用餐與逛街選擇豐富</div></li>
+        <li><span class="time">19:00</span><span class="place">抵達中部國際機場</span><div class="note">最晚建議抵達時間</div></li>
+        <li><span class="time">21:15→23:50</span><span class="mode">✈</span><span class="place">中部國際機場 → 桃園機場</span><div class="note">虎航 IT209</div></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= 景點與美食 ================= -->
+<section id="explore">
+  <svg class="deco" viewBox="0 0 100 100" style="width:28px;top:26px;right:5%;transform:rotate(-10deg);"><use href="#leaf" width="100" height="100"></use></svg>
+  <svg class="deco" viewBox="0 0 100 100" style="width:22px;bottom:24px;left:6%;transform:rotate(12deg);"><use href="#paw" width="100" height="100"></use></svg>
+
+  <div class="wrap">
+    <div class="section-head">
+      <svg class="mascot-mini" viewBox="0 0 100 100"><use href="#mao" width="100" height="100"></use></svg>
+      <div>
+        <div class="eyebrow">SPOTS &amp; TASTES</div>
+        <h2>景點與美食精選</h2>
+        <p>依區域整理的口袋名單，涵蓋景點、餐廳、咖啡廳、小吃與體驗活動，方便依當日路線隨時查找。</p>
+      </div>
+    </div>
+
+    <div class="region">
+      <div class="region-title"><h3>名古屋站</h3><span class="ln"></span></div>
+      <div class="spot-grid">
+        <div class="spot" data-cat="咖啡廳"><span class="tag">咖啡廳</span><h4>HARBS 名古屋店</h4><div class="note">水果千層蛋糕名店</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>麵家獅子丸</h4><div class="note">招牌「雞白湯拉麵」</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>Konparu Sun Road Branch</h4><div class="hours">08:00–21:00</div><div class="note">炸蝦三明治，大須商店街也有分店</div></div>
+        <div class="spot" data-cat="小吃"><span class="tag">小吃</span><h4>Échiré Pâtisserie Au Beurre</h4><div class="note">JR名古屋高島屋一樓北館熟食區，有名古屋限定泡芙</div></div>
+        <div class="spot" data-cat="小吃"><span class="tag">小吃</span><h4>BOUL'ANGE</h4><div class="note">羊角可頌，名古屋車站人氣麵包店</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>炭燒富士鰻魚 太閤口店</h4><div class="hours">11:00–22:00</div></div>
+        <div class="spot" data-cat="購物"><span class="tag">購物</span><h4>Onitsuka Tiger 名古屋</h4><div class="hours">11:00–20:00</div><div class="note">中村區名駅 4-8-18，1–2 樓</div></div>
+      </div>
+    </div>
+
+    <div class="region">
+      <div class="region-title"><h3>榮</h3><span class="ln"></span></div>
+      <div class="spot-grid">
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>中部電力未來塔</h4><div class="hours">10:00–21:00・門票 ¥700</div></div>
+        <div class="spot" data-cat="購物"><span class="tag">購物</span><h4>綠洲21</h4><div class="note">動漫周邊、複合商業設施</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>萬松寺</h4><div class="note">緊鄰大須觀音</div></div>
+        <div class="spot" data-cat="咖啡廳"><span class="tag">咖啡廳</span><h4>HARBS 榮本店</h4><div class="hours">11:00–21:00</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>大眾酒泉</h4><div class="hours">12:00–01:00</div><div class="note">清酒喝到飽，約 ¥2,000–3,000／人</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>鮨 功</h4><div class="note">Omakase 壽司名店，建議提前訂位</div></div>
+        <div class="spot" data-cat="購物"><span class="tag">購物</span><h4>chiikawa parco｜THE GUEST CAFE</h4><div class="hours">10:00–20:00</div></div>
+        <div class="spot" data-cat="購物"><span class="tag">購物</span><h4>妙香園 Myokoen</h4><div class="note">抹茶專門店</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>ひつまぶし花岡</h4><div class="hours">11:00–16:00／18:00–22:00</div></div>
+      </div>
+    </div>
+
+    <div class="region">
+      <div class="region-title"><h3>大須・熱田</h3><span class="ln"></span></div>
+      <div class="spot-grid">
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>大須觀音</h4><div class="hours">06:00–19:00</div></div>
+        <div class="spot" data-cat="購物"><span class="tag">購物</span><h4>大須商店街</h4><div class="hours">全日開放</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>熱田神宮</h4><div class="hours">全日開放・寶物館 ¥500＋草薙館套票 ¥800</div><div class="note">日本最古老且地位崇高的神宮之一</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>紫陽花</h4><div class="note">在地推薦拉麵</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>熱田蓬萊軒</h4><div class="note">鰻魚三吃，名古屋代表美食</div></div>
+      </div>
+    </div>
+
+    <div class="region">
+      <div class="region-title"><h3>犬山城</h3><span class="ln"></span></div>
+      <div class="spot-grid">
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>犬山城</h4><div class="hours">09:00–17:00・門票 ¥550</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>有樂苑</h4><div class="hours">09:30–17:00・門票 ¥1,500</div><div class="note">國寶茶苑</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>博物館明治村</h4><div class="hours">10:00–17:00（週二至週四公休）・門票 ¥2,000</div></div>
+        <div class="spot" data-cat="體驗"><span class="tag">體驗</span><h4>★犬山城下町套票★</h4><div class="hours">¥1,950</div><div class="note">含名古屋⇄犬山來回車票、犬山城門票、有樂苑與城下町優惠券</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>針綱神社</h4><div class="note">祈求安產、長壽與消災解厄</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>三光稻荷神社</h4><div class="note">以招財與戀愛運聞名</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>Matsui 蕎麥正まつい 犬山店</h4><div class="hours">11:00 起，售完即止</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>鰻と釜めし 九</h4><div class="note">鰻魚飯</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>壽俵屋 犬山庵</h4><div class="note">定食套餐</div></div>
+      </div>
+    </div>
+
+    <div class="region">
+      <div class="region-title"><h3>名古屋</h3><span class="ln"></span></div>
+      <div class="spot-grid">
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>名古屋城</h4><div class="hours">09:00–16:30・門票 ¥500</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>吉卜力公園</h4><div class="hours">09:00–17:00・票價依票種而定</div><div class="note">建議前兩個月 10 號台灣時間 13:00 準時搶票</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>TOYOTA 產業技術紀念館</h4><div class="hours">09:30–17:00・門票 ¥1,000</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>名古屋刀劍博物館</h4><div class="hours">10:00–17:00・門票 ¥1,200</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>金鯱橫丁</h4><div class="note">名古屋城下的美食街</div></div>
+        <div class="spot" data-cat="體驗"><span class="tag">體驗</span><h4>東別院 暮らしの朝市</h4><div class="hours">10:00–14:00</div><div class="note">每月 8、18、28 日，地鐵「東別院」站 4 號出口</div></div>
+        <div class="spot" data-cat="體驗"><span class="tag">體驗</span><h4>柳橋中央市場</h4><div class="hours">04:00–10:00（週日、三公休）</div></div>
+        <div class="spot" data-cat="體驗"><span class="tag">體驗</span><h4>堀川遊覽船</h4><div class="note">期間限定運行</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>百年餃子店 百老亭</h4></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>みそカツ 矢場とん</h4><div class="note">味噌豬排，推薦本店或驛前店</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>人形町今半</h4><div class="note">壽喜燒，名古屋 MIDLAND SQUARE 店</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>Coffee House Kako 柳橋店</h4><div class="note">在地人氣早餐</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>炭燒小屋</h4><div class="note">炭烤內臟燒肉</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>大久手山本屋</h4></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>塚餃子</h4><div class="note">豬舌、紫蘇煎餃</div></div>
+        <div class="spot" data-cat="小吃"><span class="tag">小吃</span><h4>Tsubame Bread &amp; Milk</h4><div class="note">生吐司早餐，甘旨庵前店</div></div>
+        <div class="spot" data-cat="小吃"><span class="tag">小吃</span><h4>いもんね</h4><div class="note">熱田 nagAya，現包義式冰淇淋大福</div></div>
+      </div>
+    </div>
+
+    <div class="region">
+      <div class="region-title"><h3>飛驒高山</h3><span class="ln"></span></div>
+      <div class="spot-grid">
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>高山陣屋</h4><div class="hours">08:45–17:00・門票 ¥500</div><div class="note">國家級古蹟，江戶時代代官所建築</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>宮川早市</h4><div class="hours">07:00–12:00</div><div class="note">日本三大早市之一，河畔農產與美食市集</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>味藏天國</h4><div class="hours">11:00–14:00／17:00–21:00</div><div class="note">飛驒牛燒肉</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>丸明</h4><div class="note">飛驒牛燒肉，份量較為紮實</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>熟成飛騨牛焼肉 GYU-SUKE</h4></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>創作郷土寿司本舗 梗絲</h4><div class="hours">10:00–15:00／17:00–19:00</div><div class="note">飛驒牛三吃</div></div>
+        <div class="spot" data-cat="小吃"><span class="tag">小吃</span><h4>飛驒特牛</h4><div class="hours">10:00–17:00</div><div class="note">老街招牌飛驒牛握壽司</div></div>
+        <div class="spot" data-cat="小吃"><span class="tag">小吃</span><h4>高山布丁亭</h4><div class="hours">10:00–16:00</div></div>
+        <div class="spot" data-cat="小吃"><span class="tag">小吃</span><h4>舩坂酒造店</h4><div class="note">投幣式試飲清酒，扭蛋機可帶走專屬酒杯</div></div>
+        <div class="spot" data-cat="購物"><span class="tag">購物</span><h4>大野屋（大のや醸造）</h4><div class="hours">08:30–18:00</div><div class="note">味噌老舖</div></div>
+        <div class="spot" data-cat="咖啡廳"><span class="tag">咖啡廳</span><h4>coffee don</h4><div class="hours">07:30–18:00（週二公休）</div><div class="note">逾 70 年歷史的老派喫茶店</div></div>
+      </div>
+    </div>
+
+    <div class="region">
+      <div class="region-title"><h3>下呂溫泉</h3><span class="ln"></span></div>
+      <div class="spot-grid">
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>下呂合掌村</h4><div class="hours">08:30–17:00・門票 ¥800</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>下呂出湯朝市</h4><div class="hours">08:00–12:00</div><div class="note">通往合掌村入口之一的小市集</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>加恵瑠神社</h4><div class="note">俗稱青蛙神社，緊鄰下呂布丁，祈求旅途平安、工作順利、情感圓滿</div></div>
+        <div class="spot" data-cat="景點"><span class="tag">景點</span><h4>溫泉寺</h4><div class="note">建於半山腰，可俯瞰整個下呂溫泉街</div></div>
+        <div class="spot" data-cat="餐廳"><span class="tag">餐廳</span><h4>Ça va pas la tête?</h4><div class="hours">週二 11:15–13:45</div><div class="note">建議先查詢官網或 IG 確認營業日</div></div>
+        <div class="spot" data-cat="咖啡廳"><span class="tag">咖啡廳</span><h4>千寿堂</h4><div class="note">栗子蒙布朗廣受好評</div></div>
+        <div class="spot" data-cat="購物"><span class="tag">購物</span><h4>GEROGERO BUTTER STAND</h4><div class="note">以自家製奶油為主角的甜點店</div></div>
+        <div class="spot" data-cat="小吃"><span class="tag">小吃</span><h4>下呂布丁</h4></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= 戰國物語 ================= -->
+<section id="stories">
+  <svg class="deco" viewBox="0 0 100 100" style="width:26px;top:22px;left:4%;transform:rotate(10deg);"><use href="#star" width="100" height="100"></use></svg>
+  <svg class="deco" viewBox="0 0 100 100" style="width:24px;bottom:30px;right:5%;transform:rotate(-14deg);"><use href="#leaf" width="100" height="100"></use></svg>
+
+  <div class="wrap-narrow">
+    <div class="section-head">
+      <svg class="mascot-mini" viewBox="0 0 100 100"><use href="#bobo" width="100" height="100"></use></svg>
+      <div>
+        <div class="eyebrow">HISTORY &amp; LORE</div>
+        <h2>戰國物語：從犬山到下呂</h2>
+        <p>這趟旅程走過的每一座城池與神社，都曾是四百多年前那場天下爭奪戰的舞台。</p>
+      </div>
+    </div>
+
+    <p class="story-lede">時間回到十六世紀，如今的名古屋、犬山一帶，當時稱作「尾張國」。這裡曾住著一位行為古怪、不守禮節的少年，人稱「尾張的大傻瓜」——他的名字是織田信長。當時沒有人想過，這個少年日後會撼動整個日本的命運，而犬山城周邊，正是他年少時最常活動的區域之一。</p>
+
+    <div class="act"><div class="bullet">1</div><div><h4>犬山城下的戰國世界</h4><p>犬山城規模不算宏偉，但在戰國時代卻是重要的戰略據點——因為城旁緊鄰木曾川，掌握犬山，就掌握了進出尾張的交通命脈。站上犬山城天守遠眺時，不妨想像五百年前的武士也曾站在同一處，望著同一條河，只是他們眼中看的不是風景，而是「敵人會不會從那裡打過來」。</p></div></div>
+
+    <div class="act"><div class="bullet">2</div><div><h4>熱田神宮前的豪賭</h4><p>1560 年，今川義元率領號稱兩萬餘人的大軍上洛，途中必經尾張，而信長手上僅有數千兵力，實力懸殊到幾乎無人看好他能取勝。出征前，信長來到熱田神宮祈求武運——隨後便發生了日本史上最著名的奇襲戰：桶狹間之戰。他利用暴風雨掩護，直搗今川本陣，今川義元當場戰死。一夕之間，「尾張的大傻瓜」成了戰國舞台的新星。走進熱田神宮參道時，或許能想像信長也曾從同一條路走過，只是他那天，很可能認為自己有去無回。</p></div></div>
+
+    <div class="act"><div class="bullet">3</div><div><h4>本能寺之變與接力賽</h4><p>信長勢力持續壯大，眼看即將統一天下之際，卻在 1582 年遭部下明智光秀於本能寺背叛而身亡，統一大業因此中斷。接棒的是同樣出身尾張、原本只是農民之子的豐臣秀吉。他聞訊後立刻與敵軍和談，率軍急行軍趕回京都附近（史稱「中國大返還」），並在山崎之戰擊敗明智光秀，成為織田家最具權勢的人物，最終完成信長未竟的統一之夢。</p></div></div>
+
+    <div class="act"><div class="bullet">4</div><div><h4>關原之戰與真正的天下人</h4><p>秀吉晚年出兵朝鮮，耗費大量國力，1598 年病逝後，留下年幼的繼承人。輔政大老之中實力最強的德川家康，在等待多年後於 1600 年的關原之戰擊敗石田三成率領的西軍，奠定天下人的地位。三年後，家康受封征夷大將軍，建立江戶幕府，日本自此進入長達兩百六十年的和平時代——名古屋城上那對著名的金鯱，正是德川家權勢的象徵。</p></div></div>
+
+    <div class="act"><div class="bullet">5</div><div><h4>和平年代的高山與千年溫泉</h4><p>戰事落幕後，飛驒高山成為江戶幕府治理地方的重要行政中心，於是有了高山陣屋——如果說犬山城代表武士的世界、熱田神宮見證英雄崛起，那麼高山陣屋展現的，便是和平年代官員治理國家的日常。而下呂溫泉的故事甚至更早，早在平安時代便已聞名，信長、秀吉、家康都曾知曉這處溫泉。無論天下由誰主宰，溫泉始終靜靜流淌——這也是為什麼，在走過犬山城的戰國故事後，隔天泡進下呂溫泉時，總會生出一種特別的感觸：爭天下的人早已遠去，溫泉卻依然溫熱如昔。</p></div></div>
+
+    <div class="tip-bubble">
+      <svg viewBox="0 0 100 100"><use href="#mao" width="100" height="100"></use></svg>
+      <p><span class="who">毛毛小提醒</span>走進景點前先讀一段故事，眼前的城牆和神社會突然變得不一樣哦！</p>
+    </div>
+
+    <div class="divider"><span class="ln"></span>⛩<span class="ln"></span></div>
+
+    <h3 style="font-size:1.05rem;margin-bottom:16px;">戰役與人物檔案</h3>
+    <div class="lore-grid">
+      <div class="lore"><h4>桶狹間之戰・1560 年</h4><p>今川軍約 2.5–3 萬人，信長兵力僅約 2,000–5,000 人。信長利用暴雨掩護奇襲今川本陣，今川義元當場戰死，一戰扭轉尾張的命運。</p></div>
+      <div class="lore"><h4>本能寺之變・1582 年</h4><p>明智光秀以「敵在本能寺」下令倒戈，信長於本能寺自盡，享年 48 歲，遺體至今未被正式尋獲，成為日本史上最神秘的懸案之一。</p></div>
+      <div class="lore"><h4>豐臣秀吉</h4><p>出身農民之子，靠務實的談判與組織能力受信長重用，本能寺之變後迅速掌權，完成日本統一，晚年推行「刀狩令」奠定士農分離的社會制度。</p></div>
+      <div class="lore"><h4>關原之戰・1600 年</h4><p>東軍德川家康與西軍石田三成於岐阜縣關原對峙，一場大霧下的決戰因西軍陣營小早川秀秋臨陣倒戈而分出勝負，奠定德川兩百六十年治世。</p></div>
+      <div class="lore"><h4>熱田神宮・參拜方式</h4><p>投幣香油錢（5 円取結緣諧音）→ 搖鈴 → 鞠躬兩次 → 拍手兩下 → 誠心許願，敘明姓名與心願 → 再鞠躬一次。</p></div>
+      <div class="lore"><h4>心之小徑（こころの小径）</h4><p>神樂殿後方的靜謐小路，內有祭祀水神的「清水社」，池水傳說對皮膚眼睛有益；最深處的「一之御前神社」為熱田神宮最神聖之地，禁止拍照，開放時間為每日 09:00–16:00，與神宮本身全日開放不同。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 實用資訊 ================= -->
+<section id="info">
+  <svg class="deco" viewBox="0 0 100 100" style="width:24px;top:24px;right:6%;transform:rotate(12deg);"><use href="#heart" width="100" height="100"></use></svg>
+  <svg class="deco" viewBox="0 0 100 100" style="width:22px;bottom:26px;left:5%;transform:rotate(-10deg);"><use href="#star" width="100" height="100"></use></svg>
+
+  <div class="wrap">
+    <div class="section-head">
+      <svg class="mascot-mini" viewBox="0 0 100 100"><use href="#mao" width="100" height="100"></use></svg>
+      <div>
+        <div class="eyebrow">GOOD TO KNOW</div>
+        <h2>實用資訊</h2>
+      </div>
+    </div>
+    <div class="info-grid">
+      <div class="info-card">
+        <h4>✈️ 航班資訊</h4>
+        <ul>
+          <li>去程：虎航 IT206｜TPE T1 → NGO T2｜2026/10/23（五）09:00–12:55</li>
+          <li>回程：虎航 IT209｜NGO T2 → TPE T1｜2026/10/28（三）21:15–23:50</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h4>📝 行前提醒</h4>
+        <ul>
+          <li>吉卜力公園門票須於出發前兩個月 10 日台灣時間 13:00 準時搶票</li>
+          <li>犬山城下町套票建議提前於名古屋購買</li>
+          <li>鮨功建議提前訂位；味藏天國到場需先抽號碼牌</li>
+          <li>出發前請留意名古屋、下呂、高山三地即時天氣與早晚溫差</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h4>🚄 交通備忘</h4>
+        <ul>
+          <li>名古屋 ⇄ 犬山遊園：名鐵犬山線，車程約 33 分鐘</li>
+          <li>名古屋 ⇄ 下呂：JR 特急，車程約 1 小時 45 分</li>
+          <li>下呂 ⇄ 高山：JR 特急，車程約 50 分鐘，末班車需留意時刻</li>
+          <li>下呂合掌村：濃飛巴士約一小時一班，或步行上坡前往</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tip-bubble">
+      <svg viewBox="0 0 100 100"><use href="#bobo" width="100" height="100"></use></svg>
+      <p><span class="who">波波小提醒</span>時刻表和門票資訊會變動，出發前記得再核對一次官方公告喔！</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="duo">
+    <svg viewBox="0 0 100 100"><use href="#mao" width="100" height="100"></use></svg>
+    <svg viewBox="0 0 100 100" style="width:34px;height:34px;"><use href="#star" width="100" height="100"></use></svg>
+    <svg viewBox="0 0 100 100"><use href="#bobo" width="100" height="100"></use></svg>
+  </div>
+  依既定計畫整理製作・時間與內容請於出發前再次核對最新資訊<br>旅途愉快，毛毛與波波在中部等你！
+</footer>
+
+
+
+</body></html>
